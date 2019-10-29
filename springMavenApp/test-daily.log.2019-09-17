@@ -1,0 +1,146 @@
+2019-09-17 13:51:45,234 DEBUG [main] log.HelloWorldLog4J (HelloWorldLog4J.java:10)     - start:KIM
+2019-09-17 13:51:45,238 INFO  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:11)     - start:KIM
+2019-09-17 13:51:45,238 WARN  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:12)     - start:KIM
+2019-09-17 13:51:45,238 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:13)     - start:KIM
+2019-09-17 13:51:45,238 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:14)     - start:KIM
+2019-09-17 13:51:45,238 DEBUG [main] log.HelloWorldLog4J (HelloWorldLog4J.java:16)     - end:KIM
+2019-09-17 13:51:45,240 INFO  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:17)     - end:KIM
+2019-09-17 13:51:45,240 WARN  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:18)     - end:KIM
+2019-09-17 13:51:45,240 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:19)     - end:KIM
+2019-09-17 13:51:45,240 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:20)     - end:KIM
+2019-09-17 13:51:45,240 DEBUG [main] log.HelloWorldLog4J (HelloWorldLog4J.java:10)     - start:LEE
+2019-09-17 13:51:45,240 INFO  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:11)     - start:LEE
+2019-09-17 13:51:45,240 WARN  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:12)     - start:LEE
+2019-09-17 13:51:45,240 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:13)     - start:LEE
+2019-09-17 13:51:45,240 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:14)     - start:LEE
+2019-09-17 13:51:45,241 DEBUG [main] log.HelloWorldLog4J (HelloWorldLog4J.java:16)     - end:LEE
+2019-09-17 13:51:45,242 INFO  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:17)     - end:LEE
+2019-09-17 13:51:45,242 WARN  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:18)     - end:LEE
+2019-09-17 13:51:45,242 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:19)     - end:LEE
+2019-09-17 13:51:45,242 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:20)     - end:LEE
+2019-09-17 13:56:03,548 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:13)     - start:KIM
+2019-09-17 13:56:03,551 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:14)     - start:KIM
+2019-09-17 13:56:03,551 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:19)     - end:KIM
+2019-09-17 13:56:03,551 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:20)     - end:KIM
+2019-09-17 13:56:03,551 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:13)     - start:LEE
+2019-09-17 13:56:03,551 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:14)     - start:LEE
+2019-09-17 13:56:03,553 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:19)     - end:LEE
+2019-09-17 13:56:03,553 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:20)     - end:LEE
+2019-09-17 14:03:06,800 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 14:03:06 KST 2019]; root of context hierarchy
+2019-09-17 14:03:06,834 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [0.applicationContext.xml]
+2019-09-17 14:05:33,024 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:13)     - start:KIM
+2019-09-17 14:05:33,027 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:14)     - start:KIM
+2019-09-17 14:05:33,027 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:19)     - end:KIM
+2019-09-17 14:05:33,027 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:20)     - end:KIM
+2019-09-17 14:05:33,027 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:13)     - start:LEE
+2019-09-17 14:05:33,027 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:14)     - start:LEE
+2019-09-17 14:05:33,029 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:19)     - end:LEE
+2019-09-17 14:05:33,029 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:20)     - end:LEE
+2019-09-17 14:05:52,944 INFO  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:11)     - start:KIM
+2019-09-17 14:05:52,948 WARN  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:12)     - start:KIM
+2019-09-17 14:05:52,948 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:13)     - start:KIM
+2019-09-17 14:05:52,948 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:14)     - start:KIM
+2019-09-17 14:05:52,948 INFO  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:17)     - end:KIM
+2019-09-17 14:05:52,948 WARN  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:18)     - end:KIM
+2019-09-17 14:05:52,951 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:19)     - end:KIM
+2019-09-17 14:05:52,951 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:20)     - end:KIM
+2019-09-17 14:05:52,952 INFO  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:11)     - start:LEE
+2019-09-17 14:05:52,952 WARN  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:12)     - start:LEE
+2019-09-17 14:05:52,952 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:13)     - start:LEE
+2019-09-17 14:05:52,952 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:14)     - start:LEE
+2019-09-17 14:05:52,952 INFO  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:17)     - end:LEE
+2019-09-17 14:05:52,952 WARN  [main] log.HelloWorldLog4J (HelloWorldLog4J.java:18)     - end:LEE
+2019-09-17 14:05:52,952 ERROR [main] log.HelloWorldLog4J (HelloWorldLog4J.java:19)     - end:LEE
+2019-09-17 14:05:52,952 FATAL [main] log.HelloWorldLog4J (HelloWorldLog4J.java:20)     - end:LEE
+2019-09-17 14:16:32,965 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 14:16:32 KST 2019]; root of context hierarchy
+2019-09-17 14:16:32,997 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/create/1.bean_create.xml]
+2019-09-17 14:24:53,804 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 14:24:53 KST 2019]; root of context hierarchy
+2019-09-17 14:24:53,835 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/create/1.bean_create.xml]
+2019-09-17 14:28:15,040 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 14:28:15 KST 2019]; root of context hierarchy
+2019-09-17 14:28:15,071 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/create/1.bean_create.xml]
+2019-09-17 14:30:36,867 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 14:30:36 KST 2019]; root of context hierarchy
+2019-09-17 14:30:36,898 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/create/1.bean_create.xml]
+2019-09-17 14:30:59,833 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 14:30:59 KST 2019]; root of context hierarchy
+2019-09-17 14:30:59,864 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/create/1.bean_create.xml]
+2019-09-17 14:32:56,377 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 14:32:56 KST 2019]; root of context hierarchy
+2019-09-17 14:32:56,408 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/create/1.bean_create.xml]
+2019-09-17 14:33:44,889 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 14:33:44 KST 2019]; root of context hierarchy
+2019-09-17 14:33:44,920 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/create/1.bean_attr.xml]
+2019-09-17 14:34:03,519 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 14:34:03 KST 2019]; root of context hierarchy
+2019-09-17 14:34:03,550 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/create/1.bean_attr.xml]
+2019-09-17 14:34:17,531 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 14:34:17 KST 2019]; root of context hierarchy
+2019-09-17 14:34:17,563 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/attr/1.bean_attr.xml]
+2019-09-17 14:59:16,401 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 14:59:16 KST 2019]; root of context hierarchy
+2019-09-17 14:59:16,433 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/attr/1.bean_attr.xml]
+2019-09-17 14:59:20,044 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 14:59:20 KST 2019]; root of context hierarchy
+2019-09-17 14:59:20,076 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/attr/1.bean_attr.xml]
+2019-09-17 15:05:03,988 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:05:03 KST 2019]; root of context hierarchy
+2019-09-17 15:05:04,019 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/attr/1.bean_attr.xml]
+2019-09-17 15:05:04,104 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:862)     - Closing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:05:03 KST 2019]; root of context hierarchy
+2019-09-17 15:07:08,568 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:07:08 KST 2019]; root of context hierarchy
+2019-09-17 15:07:08,600 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/attr/1.bean_attr.xml]
+2019-09-17 15:07:08,685 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:862)     - Closing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:07:08 KST 2019]; root of context hierarchy
+2019-09-17 15:07:32,173 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:07:32 KST 2019]; root of context hierarchy
+2019-09-17 15:07:32,205 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/attr/1.bean_attr.xml]
+2019-09-17 15:07:32,288 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:862)     - Closing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:07:32 KST 2019]; root of context hierarchy
+2019-09-17 15:16:35,303 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:16:35 KST 2019]; root of context hierarchy
+2019-09-17 15:16:35,334 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/attr/1.bean_attr.xml]
+2019-09-17 15:16:35,420 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:862)     - Closing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:16:35 KST 2019]; root of context hierarchy
+2019-09-17 15:21:35,485 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:21:35 KST 2019]; root of context hierarchy
+2019-09-17 15:21:35,516 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/attr/1.bean_attr.xml]
+2019-09-17 15:21:35,601 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:862)     - Closing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:21:35 KST 2019]; root of context hierarchy
+2019-09-17 15:38:37,946 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:38:37 KST 2019]; root of context hierarchy
+2019-09-17 15:38:37,977 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/attr/1.bean_attr.xml]
+2019-09-17 15:38:38,071 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:862)     - Closing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:38:37 KST 2019]; root of context hierarchy
+2019-09-17 15:38:45,032 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:38:45 KST 2019]; root of context hierarchy
+2019-09-17 15:38:45,063 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/attr/1.bean_attr.xml]
+2019-09-17 15:38:45,156 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:862)     - Closing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:38:45 KST 2019]; root of context hierarchy
+2019-09-17 15:49:43,698 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:49:43 KST 2019]; root of context hierarchy
+2019-09-17 15:49:43,730 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/annotation/1.bean_annotation.xml]
+2019-09-17 15:54:16,230 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:54:16 KST 2019]; root of context hierarchy
+2019-09-17 15:54:16,261 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/annotation/1.bean_annotation.xml]
+2019-09-17 15:55:32,047 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:55:32 KST 2019]; root of context hierarchy
+2019-09-17 15:55:32,078 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/annotation/1.bean_annotation.xml]
+2019-09-17 15:55:44,836 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:55:44 KST 2019]; root of context hierarchy
+2019-09-17 15:55:44,867 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/annotation/1.bean_annotation.xml]
+2019-09-17 15:56:52,322 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 15:56:52 KST 2019]; root of context hierarchy
+2019-09-17 15:56:52,354 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/annotation/1.bean_annotation.xml]
+2019-09-17 16:01:50,550 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 16:01:50 KST 2019]; root of context hierarchy
+2019-09-17 16:01:50,581 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/annotation/1.bean_annotation.xml]
+2019-09-17 16:03:36,541 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 16:03:36 KST 2019]; root of context hierarchy
+2019-09-17 16:03:36,572 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/annotation/1.bean_annotation.xml]
+2019-09-17 16:06:31,609 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 16:06:31 KST 2019]; root of context hierarchy
+2019-09-17 16:06:31,640 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/annotation/1.bean_annotation.xml]
+2019-09-17 16:07:58,898 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 16:07:58 KST 2019]; root of context hierarchy
+2019-09-17 16:07:58,930 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/annotation/1.bean_annotation.xml]
+2019-09-17 16:07:59,101 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:862)     - Closing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 16:07:58 KST 2019]; root of context hierarchy
+2019-09-17 16:27:41,505 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 16:27:41 KST 2019]; root of context hierarchy
+2019-09-17 16:27:41,538 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [99.user.xml]
+2019-09-17 17:03:25,643 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 17:03:25 KST 2019]; root of context hierarchy
+2019-09-17 17:03:25,674 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [99.user_annotation.xml]
+2019-09-17 17:03:32,607 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 17:03:32 KST 2019]; root of context hierarchy
+2019-09-17 17:03:32,638 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [99.user.xml]
+2019-09-17 17:13:24,298 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 17:13:24 KST 2019]; root of context hierarchy
+2019-09-17 17:13:24,329 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [99.user.xml]
+2019-09-17 17:14:56,390 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 17:14:56 KST 2019]; root of context hierarchy
+2019-09-17 17:14:56,421 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [99.user_annotation.xml]
+2019-09-17 17:20:58,846 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 17:20:58 KST 2019]; root of context hierarchy
+2019-09-17 17:20:58,879 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [99.user_annotation.xml]
+2019-09-17 17:55:25,673 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 17:55:25 KST 2019]; root of context hierarchy
+2019-09-17 17:55:25,714 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [99.user.xml]
+2019-09-17 17:56:11,258 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 17:56:11 KST 2019]; root of context hierarchy
+2019-09-17 17:56:11,290 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [99.user.xml]
+2019-09-17 17:56:39,328 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 17:56:39 KST 2019]; root of context hierarchy
+2019-09-17 17:56:39,374 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill1/bean/create/1.bean_create.xml]
+2019-09-17 17:57:22,140 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 17:57:22 KST 2019]; root of context hierarchy
+2019-09-17 17:57:22,172 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/99.user.xml]
+2019-09-17 17:57:39,033 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 17:57:39 KST 2019]; root of context hierarchy
+2019-09-17 17:57:39,066 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/99.user.xml]
+2019-09-17 17:58:14,313 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 17:58:14 KST 2019]; root of context hierarchy
+2019-09-17 17:58:14,345 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-17 17:59:33,251 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 17:59:33 KST 2019]; root of context hierarchy
+2019-09-17 17:59:33,284 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user_annotation.xml]
+2019-09-17 18:00:36,163 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 18:00:36 KST 2019]; root of context hierarchy
+2019-09-17 18:00:36,203 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user_annotation.xml]
+2019-09-17 18:02:06,000 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5eb5c224: startup date [Tue Sep 17 18:02:05 KST 2019]; root of context hierarchy
+2019-09-17 18:02:06,035 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user_annotation.xml]

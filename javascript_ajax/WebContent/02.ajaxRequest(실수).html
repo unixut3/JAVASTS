@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var xhr = null;
+	function ajaxRequestIdCheck() {
+		var idStr = document.f.id.value;
+		if(idStr.length!=0 || idStr.trim()==""){
+			document.f.id.focus();
+			return;
+		}
+		/*
+		AJAX 요청순서
+		*/
+		/*  
+		1. XMLHttpRequest객체생성
+		*/
+		var xhr = new XMLHttpRequest();
+	/* 
+	2. 요청속성설정
+	*/		
+		var method='GET';
+		var params='id='+idStr;
+		var url='02.ajaxRequest.jsp'+'?'+params;
+		var async=true;
+		/*  
+		응답이 도착했을때 실행되는 콜백 함수
+		*/
+		xhr.onreadystatechange = responseCallBack;
+		xhr.open(method,url,async);
+		/*  
+		3. 요청
+		*/
+		xhr.send(null);
+		
+	}
+		/*  
+		응답이 도착했을때 실행되는 사용자정의 콜백 함수
+		*/
+	function responseCallBack() {
+		console.log('xhr --> readyState:'+xhr.readyState);
+		/*
+		<< xhr.readyState >>
+		The state of the request. 
+		 0=unsent
+		 1=opened
+		 2=headers_received
+		 3=loading
+		 4=done
+		*/
+		if(xhr.readyState==4){
+			//완전한 응답이 도착했을 때.
+			xhr.responseText = xhr.responseText;
+			console.log("readyState:"+xhr.readyState);
+			console.log("responseText:"+xhr.responseText);
+			document.getElementById('msg').innerHTML = reponseText;
+		}else{
+			
+		}
+	}
+</script>
+</head>
+<body>
+<h1>ajax 요청</h1></hr>
+<form name="f" id="f" action="">
+	아이디:<input type="text" name="id" id="id" onkeyup="ajaxRequestIdCheck();">
+	<span id="msg"></span>
+</form>
+</body>
+</html>

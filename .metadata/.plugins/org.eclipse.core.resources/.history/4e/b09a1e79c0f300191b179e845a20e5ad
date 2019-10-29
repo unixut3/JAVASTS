@@ -1,0 +1,5 @@
+package com.itwill.ajax.controller;
+
+public class JsonViewController {
+
+}

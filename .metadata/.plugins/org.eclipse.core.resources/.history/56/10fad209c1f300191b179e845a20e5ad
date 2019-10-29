@@ -1,0 +1,19 @@
+package com.itwill.ajax.controller;
+
+import java.util.Date;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.itwill.ajax.News;
+
+@Controller
+public class JsonViewController {
+	@RequestMapping(value="/newsTitleJsonView.do")
+	public String newsTitleJsonView(Model model) {
+		model.addAttribute("news",new News("title","company",new Date().toScaleString));
+	}
+	
+
+}

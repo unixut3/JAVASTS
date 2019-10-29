@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var count=0; 
+	function createElementAppend(){
+		/*
+		Element,Text 노드의생성은 document객체만가능
+		*/
+		/*
+		1.Element div생성
+		*/
+		var newDivE = document.createElement('div');
+		newDivE.setAttribute('id', 'newDiv'+ ++count);
+		newDivE.style.border='1px dotted gold';
+		newDivE.style.display='block';
+		/*
+		1-1.TextNode 생성
+		*/
+		var newTextNode = document
+			.createTextNode('새로생성된 DIV'+count+'의TextNode');
+		newDivE.appendChild(newTextNode);
+		/*
+		1-2.Image Element 생성
+		*/
+		var imageE = document.createElement("img");
+		imageE.setAttribute('src', 'images/w.png');
+		imageE.setAttribute('width','15px');
+		imageE.setAttribute('height','15px');
+		newDivE.appendChild(imageE);
+		
+		/*
+		2. DOM Tree추가
+		*/
+		var parentDivE=document.getElementById('parent');
+		parentDivE.appendChild(newDivE);
+		/*
+		parentDivE.innerHTML=
+		"<div id=\"newDiv1\" style=\"border: 1px dotted gold; display: block;\">"+
+		"새로생성된 DIV"+count+"의TextNode<img src=\"images/w.png\" width=\"15px\" height=\"15px\">"+
+	   	"</div>";
+		*/
+	}
+	function removeElement(){
+		if(count==0)return;
+		var parentDiv = document.getElementById('parent');
+		//parentDiv.innerHTML='';
+		var removeE = document.getElementById('newDiv'+count);
+		parentDiv.removeChild(removeE);
+		count--;
+		
+	}
+	
+	function updateElement(){
+		/*
+		HTML
+		*/
+		var htmlE = document.documentElement;
+		var bodyE=document.getElementsByTagName("body").item(0);
+		//bodyE.setAttribute("background",'images/w.png')		
+		bodyE.style.background="url('images/w.png')";
+		bodyE.style.backgroundRepeatY="no-repeat";
+		bodyE.style.backgroundRepeatX="repeat";
+		
+	}
+</script>
+
+</head>
+<body>
+<h1>HTML DOM CRUD</h1><hr/>
+<div id='parent'>
+	
+</div>
+
+<div id="menu">
+	<input type="button" value="Element추가" 
+		onclick="createElementAppend();">
+	<input type="button" value="Element삭제"
+		onclick="removeElement();">
+	<input type="button" value="Element수정"
+		onclick="updateElement();">
+</div>	
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function findById(){
+		var div1E = document.getElementById('div1');
+		var div2E = document.getElementById('div2');
+		div2E.innerHTML='';
+		div2E.innerHTML+="<form>";
+		div2E.innerHTML+="검색어:<input type='text'>";
+		div2E.innerHTML+="<input type='submit' value='검색'>";
+		div2E.innerHTML+="</form>";
+		var div3E = document.getElementById('div3');
+		div3E.innerHTML='';
+		div3E.innerHTML="<img width='100' height='50' src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'>";
+		var div4E = document.getElementById('div4');
+		div4E.innerHTML+='';
+		div4E.innerHTML+="<img src='images/penguin1.gif'>";
+		div4E.innerHTML+="<img src='images/penguin2.gif'>";
+		div4E.innerHTML+="<img src='images/penguin3.gif'>";
+		
+		var resultDivE = document.getElementById("resultDiv");
+		resultDivE.innerHTML = div1E.innerHTML;
+	}
+</script>
+</head>
+<body>
+<h1>HTML DOM객체찾기</h1><hr/>
+<div id="div1">
+	id=div1
+</div>
+<div id="div2">
+	id=div2
+</div>
+<div id="div3">
+	id=div3
+</div>
+<div id="div4">
+	id=div4
+</div>
+<div id="resultDiv" style="border: 1px solid blue;width:70%">
+	id=resultDiv
+</div>
+<div>
+	<input type="button" value="id로찾기" onclick="findById()">
+</div>
+</body>
+</html>

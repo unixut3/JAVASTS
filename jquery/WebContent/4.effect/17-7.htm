@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * { margin:0px; padding:0px; }
+        ul { list-style:none; }
+        img { width:500px; height:350px; }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.7.js"></script>
+    <script src="jquery.innerfade.js"></script>
+    <!-- 
+    http://medienfreunde.com/lab/innerfade/
+     -->
+   
+    <script>
+       if($.innerfade){
+       }
+       $(function(){
+    	   $('#inner_fade').innerfade({
+    		   'animationtype':'slide',
+    		   'speed':'fast',
+    		   'type':'random',
+    		   'timeout': 1000,
+    	   });
+       });
+       $(function(){
+    	   $('#news').innerfade({
+    		   'animationtype':'slide',
+    		   'speed':'fast',
+    		   'type':'random',
+    		   'timeout': 1000,
+    	   });
+       });
+       	
+    </script>
+</head>
+<body>
+    <ul id="inner_fade">
+        <li><img src="Chrysanthemum.jpg"/></li>
+        <li><img src="Desert.jpg"/></li>
+        <li><img src="Hydrangeas.jpg"/></li>
+        <li><img src="Jellyfish.jpg"/></li>
+        <li><img src="Koala.jpg"/></li>
+        <li><img src="Lighthouse.jpg"/></li>
+        <li><img src="Penguins.jpg"/></li>
+    </ul>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div id='news'>
+    <div>news1</div>
+    <div>news2</div>
+    <div>news3</div>
+    <div>news4</div>
+    <div>news5</div>
+    <div>news6</div>
+    </div>
+</body>
+</html>

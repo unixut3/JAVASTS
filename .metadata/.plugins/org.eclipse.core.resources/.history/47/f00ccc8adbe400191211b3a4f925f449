@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="student_prototype.js">
+
+</script>
+</head>
+<body>
+<h1>javascript object4</h1><hr/>
+	<script type="text/javascript">
+		document.write("<ol>");
+		document.write("-----------new Student('xxx','kim',23,34,56)-------");
+		var student1 = new Student('yyy', 'yim', 45, 55, 77);
+		var student2 = new Student('yyy', 'yim', 45, 55, 77);
+		var student3 = new Student('zzz', 'zim', 98, 99, 90);
+		var student4 = new Student('www', 'wim', 13, 67, 14);
+		var studentArray = [student1,student2,student3,student4];
+		document.write("<li>-----Student List-------</li>")
+		for (var i = 0; i < studentArray.length; i++) {
+			studentArray[i].calcluateTot();
+			studentArray[i].calculateAvg();
+			document.write("<li>"+studentArray[i].toString()+"</li>");
+		}
+		document.write("</ol>");
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

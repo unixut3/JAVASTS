@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+	<status>0</status>
+	<msg>성공</msg>
+	<data>
+		<guestList>
+			<guest no="140">
+				<guest_name>m</guest_name>
+				<guest_date>2019-09-03 10:21:19</guest_date>
+				<guest_email>m</guest_email>
+				<guest_homepage>m</guest_homepage>
+				<guest_title>mm</guest_title>
+				<guest_content>m</guest_content>
+			</guest>
+
+			<guest no="3">
+				<guest_name>김경호</guest_name>
+				<guest_date>2019-07-22 14:22:17</guest_date>
+				<guest_email>guard@naver.com  </guest_email>
+				<guest_homepage>http://</guest_homepage>
+				<guest_title>사용법</guest_title>
+				<guest_content>방명록처럼 사용하시면 됩니다sadsa</guest_content>
+			</guest>
+		</guestList>
+	</data>
+</result>

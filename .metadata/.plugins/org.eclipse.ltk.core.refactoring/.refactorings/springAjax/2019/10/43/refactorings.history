@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.itwill.ajax.controller.JSONMessageController&apos; to &apos;JSONMessageConverterController&apos;&#x0D;&#x0A;- Original project: &apos;springAjax&apos;&#x0D;&#x0A;- Original element: &apos;com.itwill.ajax.controller.JSONMessageController&apos;&#x0D;&#x0A;- Renamed element: &apos;com.itwill.ajax.controller.JSONMessageConverterController&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;JSONMessageController&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.itwill.ajax.controller{JSONMessageController.java[JSONMessageController" matchStrategy="1" name="JSONMessageConverterController" qualified="false" references="true" similarDeclarations="false" stamp="1571624548254" textual="false" version="1.0"/>
+</session>

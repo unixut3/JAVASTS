@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="userDao" class="com.itwill.user.UserDaoImpl"/>
+	<bean id="userDaoJDBC" primary="true" class="com.itwill.user.UserDaoImplJDBC"/>
+	<!-- byName Wiring(setter injection) 
+		UserServiceImpl 객체의 property이름과 일치하는 빈의 아이디를 검색하여 injection해준다.
+		빈의 아이디가 존재하지 않을 경우 예외발생 안함
+	--> 
+	<bean id="byNameUserService" 
+		class="com.itwill.user.UserServiceImpl"
+		autowire="byName"/>
+		
+	<!-- byType Wiring(setter injection) 
+		UserServiceImpl 객체의 property 타입과 일치하는 빈을 검색하여 injection해준다.
+		property 타입과 일치하는 빈이 2개이상 존재할 경우 경우 예외발생
+		primary="true"로 설정하면 해당 빈이 우선되어 실행됨
+	--> 
+	<bean id="byTypeUserService" 
+		class="com.itwill.user.UserServiceImpl"
+		autowire="byType"/>
+
+	<!-- byType Wiring(constructor injection) 
+		UserServiceImpl 객체의 생성자타입과 일치하는 빈을 검색하여 injection해준다.
+		생성자 타입과 일치하는 빈이 2개이상 존재할 경우 경우 예외발생
+		primary="true"로 설정하면 해당 빈이 우선되어 실행됨
+	--> 
+	<bean id="constructorUserService" 
+		class="com.itwill.user.UserServiceImpl"
+		autowire="constructor"/>
+
+</beans>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;springAppMaven/src/main/resources/a.properies&apos; to &apos;a.properties&apos;" description="Rename resource &apos;a.properies&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/a.properies" name="a.properties" stamp="1568622135286" updateReferences="true"/>
+</session>

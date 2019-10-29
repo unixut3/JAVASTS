@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+/*	 아래 제이쿼리로 간단히 바꿈 
+ 	function showForm(){
+		new AjaxRequest('guest_write_form.html',
+						null,
+						displayForm,
+						'GET');
+	}
+	function displayForm(xhr){
+		if(xhr.readyState==4){
+			var htmlText=xhr.responseText;
+			document.getElementById('formContent').innerHTML=htmlText;
+		}
+	}
+	function hideForm(){
+		document.getElementById('formContent').innerHTML='';	
+	}
+*/
+	$(function(){
+		$('#showBtn').click(function(){
+			$('formContent').load('guest_write_form.html');
+		});
+		
+		$('#hideBtn').click(function(){
+			$('#formContent').text("");
+		});
+		
+	});
+</script>
+</head>
+<body>
+<input id="showBtn" type="button" value="회원가입폼" onclick="showForm();">
+<input id="hideBtn" type="button" value="회원가입취소" onclick="hideForm();">
+<div id='formContent'>
+	
+</div>
+</body>
+</html>

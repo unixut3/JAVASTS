@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	a{
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.suggest{
+		display: none;
+		position: absolute;
+		left:112px; 
+		top: 105x;
+		width:157px;
+		border: 1px dotted blue; 
+	}
+	
+</style>
+<script type="text/javascript" src="httpRequest.js"></script>
+<script type="text/javascript">
+	function sendKeyword(){
+		var keyword=document.search.keyword.value.trim();
+		if(keyword==null || keyword==''){
+			showSuggestDiv(false);
+			return;
+		}
+		sendRequest('suggest.do',
+				'keyword='+keyword,
+				responseKeyword, 
+				'GET');
+	}
+	function responseKeyword(){
+		if(xhr.readyState==4){
+			if(xhr.status==200){
+				
+				var resultCSV = xhr.responseText;
+				/*
+				4|AJAX,AJAX 실전 프로그래밍,AJA,AZERA
+				3|AJAX,AJAX 실전 프로그래밍,AJA
+				2|AJAX,AJAX 실전 프로그래밍
+				0|
+				*/
+			    var resultCSVArray = resultCSV.split("|");
+				var resultCount = resultCSVArray[0];
+				if(resultCount.trim()=='0'){
+					showSuggestDiv(false);
+					return;
+				}
+				var keywordArray=resultCSVArray[1].split(',');
+				var html='';
+				for (var i = 0; i < keywordArray.length; i++) {
+			html+=
+			"<a href=\"javascript:select('"+keywordArray[i]+"');\">"+keywordArray[i]+"</a><br>";
+				}
+				document.getElementById('suggestList').innerHTML=html;
+				showSuggestDiv(true);
+			}
+		}
+	}
+	function select(keyword){
+		document.search.keyword.value=keyword;
+		//document.search.submit();
+	}
+	function showSuggestDiv(show){
+		if(show){
+			document.getElementById('suggest').style.display='block';
+		}else{
+			document.getElementById('suggest').style.display='none';
+		}
+	}
+	window.onload=function(){
+		document.search.keyword.addEventListener(
+				'focusout',
+				function(){
+					/*
+					0.1초이후에 실행
+					*/
+					window.setTimeout(function() {
+						showSuggestDiv(false);
+					}, 150);
+					
+					
+				}
+			);
+	}
+</script>
+</head>
+<body>
+<h1>제시어</h1>
+<hr/>
+<form action="server_search.jsp" name="search">
+	<img src="http://sstatic.naver.net/search/2015/h_logo.png">
+	<input 	type="text" name="keyword"  
+		onkeyup="sendKeyword();" 
+		onfocusin="sendKeyword();"
+	> &nbsp;
+	<input type="submit" value="검색">
+	<div id="suggest" class="suggest">
+		<div id="suggestList"></div>
+	</div>
+</form>
+</body>
+</html>

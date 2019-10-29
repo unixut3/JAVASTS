@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.7.201812201020-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/main/resources/0.applicationContext.xml</config>
+		<config>src/main/java/com/itwill1/bean/create/1.bean_create.xml</config>
+		<config>src/main/java/com/itwill1/bean/attr/1.bean_attr.xml</config>
+		<config>src/main/java/com/itwill1/bean/annotation/1.bean_annotation.xml</config>
+		<config>src/main/java/com/itwill/user/99.user.xml</config>
+		<config>src/main/java/com/itwill2/di/2.bean_dependency.xml</config>
+		<config>src/main/java/com/itwill2/di/2.bean_dependency_autowire.xml</config>
+		<config>src/main/java/com/itwill2/di/2.bean_dependency_annotation.xml</config>
+		<config>src/main/java/com/itwill3/dao/3-1.spring_datasourse.xml</config>
+		<config>src/main/java/com/itwill3/dao/3-2.user_dao_jdbc.xml</config>
+		<config>src/main/java/com/itwill3/dao/3-3.user_dao_mybatis.xml</config>
+		<config>src/main/java/com/itwill4/aop/spring/4.aop.xml</config>
+	</configs>
+	<autoconfigs>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>

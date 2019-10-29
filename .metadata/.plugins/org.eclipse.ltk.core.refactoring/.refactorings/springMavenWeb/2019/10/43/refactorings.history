@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;XMLView.java&apos; to &apos;springAjax/src/main/java/com.itwill.ajax.controller&apos;&#x0D;&#x0A;- Original project: &apos;springMavenWeb&apos;&#x0D;&#x0A;- Destination element: &apos;springAjax/src/main/java/com.itwill.ajax.controller&apos;&#x0D;&#x0A;- Original element: &apos;com.itwill.controller.annotation.XMLView.java&apos;" description="Copy compilation unit" destination="=springAjax/src\/main\/java&lt;com.itwill.ajax.controller" element1="/src\/main\/java&lt;com.itwill.controller.annotation{XMLView.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1571625954933" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,58 @@
+package com.itwill.ajax.controller;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.View;
+
+import com.itwill.ajax.News;
+
+@Controller
+public class XMLViewController {
+	/*
+	 * xml출력 View객체반환
+	 */
+	@RequestMapping("/response_xml_view_object.do")
+	public View responseViewObject(Model model) {
+		ArrayList<String> friendsList=new ArrayList<String>();
+		friendsList.add("가나다");
+		friendsList.add("가나다");
+		friendsList.add("가나다");
+		friendsList.add("가나다");
+		friendsList.add("가나다");
+		friendsList.add("가나다");
+		friendsList.add("가나다");
+		model.addAttribute("friendList",friendsList);
+		XMLView xmlView = new XMLView();
+		return xmlView;
+	}
+	/*
+	 * xml출력 View이름변환
+	 */
+	@RequestMapping("/response_xml_view_name.do")
+	public String responseViewName(Model model) {
+		ArrayList<String> friendsList=new ArrayList<String>();
+		friendsList.add("가나다");
+		friendsList.add("가나다");
+		friendsList.add("가나다");
+		friendsList.add("가나다");
+		friendsList.add("가나다");
+		friendsList.add("가나다");
+		friendsList.add("가나다");
+		model.addAttribute("friendList",friendsList);
+		return "xmlView";
+	}
+	
+	
+	
+	@RequestMapping(value="newsTitleXmlView.do")
+	public String newsTitleXmlView(Model model) {
+		model.addAttribute("sdsd",new News("title","company",new Date().toLocaleString()));
+		return "jaxbXmlView";
+	};
+	
+									
+}

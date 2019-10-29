@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Thu Oct 24 16:16:46 KST 2019
+org.eclipse.jst.jee.server\:springAjax=C\:\\java_bigdata\\sts-bundle\\pivotal-tc-server\\instances\\servs\\wtpwebapps\\springAjax
+org.eclipse.jst.jee.server\:bootstrap=C\:\\java_bigdata\\sts-bundle\\pivotal-tc-server\\instances\\servs\\wtpwebapps\\bootstrap
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\ITWILL\\.m2\\repository\\org\\springframework\\spring-web\\4.2.3.RELEASE\\spring-web-4.2.3.RELEASE.jar=C\:\\java_bigdata\\sts-bundle\\pivotal-tc-server\\instances\\servs\\wtpwebapps\\springAjax\\WEB-INF\\lib\\spring-web-4.2.3.RELEASE.jar

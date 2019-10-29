@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	
+	li{
+		list-style: none;
+	}
+</style>
+<script type="text/javascript" src='httpRequest.js'></script>
+<script type="text/javascript">
+	function requestOpenApi(){
+		
+		var searchBook = document.getElementById('searchBook').value;
+		if(searchBook==null || searchBook.trim()==''){
+			return;
+		}
+		var xmlUrl="http://192.168.12.31/javascript_ajax/proxy_naver.jsp?searchBook="+searchBook;
+		//var xmlUrl="proxy_naver.jsp";
+		sendRequest(xmlUrl,null,displayResult,'GET');
+	}
+	
+	function displayResult(){
+		if(xhr.readyState==4){
+			var xmlDocument = xhr.responseXML;
+			var itemNodeList = 
+				xmlDocument.getElementsByTagName('item');
+			var html="<ul>";
+			for (var i = 0; i < itemNodeList.length; i++) {
+				var itemElement = itemNodeList.item(i);
+				/*
+				<item>
+					<title>	Do it!제이쿼리 입문</title>
+					<link>http://book.naver.com/bookdb/book_detail.php?bid=13457579</link>
+					<image>https://bookthumb-phinf.pstatic.net/cover/134/575/13457579.jpg?type=m1&udate=20180518</image>
+					...
+				</item>	
+				*/
+				var titleStr = 
+					itemElement
+						.getElementsByTagName('title')
+						.item(0)
+						.firstChild
+						.nodeValue;
+				var linkStr = 
+					itemElement
+						.getElementsByTagName('link')
+						.item(0)
+						.firstChild
+						.nodeValue;
+				var imageStr = 
+					itemElement
+						.getElementsByTagName('image')
+						.item(0)
+						.firstChild
+						.nodeValue;
+				html+="<li><img width=50 height=50 src='"+imageStr+"'/><a href='"+linkStr+"'>"+titleStr+"</a></li>";
+			}
+			html+="</ul>";
+			document.getElementById('printDiv').innerHTML=html;
+		}
+	}
+</script>
+</head>
+<body>
+<h1 onclick="requestOpenApi();">OPEN API XML[클릭시요청]</h1>
+<hr/>
+
+책검색<input type="text" id='searchBook' 
+		onkeyup="if(event.keyCode==13)requestOpenApi();" name='searchBook' >
+<input type="button" value="검색" onclick="requestOpenApi();">
+
+<br/>
+<div id="printDiv" style="border: 1px solid blue;width: 70%">
+	
+</div>
+</body>
+</html>

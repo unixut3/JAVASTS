@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jonathan Stark</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="user-scalable=no width=device-width" />
+<link rel="stylesheet" href='android.css' type="text/css" media="screen" />
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<!-- 
+<script type="text/javascript" src="android.js"></script>
+ -->
+<script type="text/javascript">
+	$(function(){
+		loadMenu();	
+	});
+	
+	function loadMenu(){
+		/* 
+		타이틀 변경
+		*/
+		$('h1').html("Jonathan Stark");
+		//메뉴버튼 삭제
+		$('#header .leftButton').remove();
+		//progress dialog 
+		$('#header').append("<div id='progress'>Loading...</div>");
+		//방법1
+		/* 
+		$.ajax({
+			url:'menu.html',
+			method:'GET',
+			success:function(htmlData){
+				$('#container').append(htmlData);
+				$('#progress').remove();
+			}
+		});
+		*/
+		//방법2
+		$('#container').load('menu.html',function(){
+			/* 
+			menu.html loading이 끝났을때 메뉴 이벤트처리
+			*/
+			$("#container a").click(function(e){
+				if($(e.target).attr('href').startsWith('http://')){
+					//절대경로인경우 page 요청
+				}else{
+					//상대경로인 경우 ajax요청 UI 변경
+					var url=$(e.target).attr('href');
+					$('#header').append("<div id='progress'>Loading...</div>");
+					$('#container').load(url,function(){
+						var title=$('h2').html();
+						$('h2').hide();
+						$('#header h1').html(title);
+						//메뉴버튼추가(메인으로가기)						
+						$('#header').append("<div class='leftButton'>Prev</div>");
+						//메뉴버튼 이벤트추가(메인으로가기)
+						$('#header .leftButton').click(function(e){
+							loadMenu();
+						});
+						
+						$('#progress').remove();
+						
+					});
+				e.preventDefault();
+					
+				}
+				
+			});
+			$('#progress').remove();
+		});
+	}
+		
+	
+</script>
+</head>
+<body>
+	<div id="header">
+		<h1>Jonathan Stark</h1>
+	</div>
+	<div id="container">
+	
+	
+	</div>
+</body>
+</html>

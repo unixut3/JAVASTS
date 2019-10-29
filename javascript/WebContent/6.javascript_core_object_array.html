@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>javascript Object,Array [JSON]</h1><hr/>
+<script type="text/javascript">
+	/*
+		JSON(javascript object notation)표기법을 
+		사용한 Object , Array객체생성
+		- [ , ] , { , } , : , ,
+	*/
+	/*******************Object******************/
+	var studentObject1={
+				'id':'aaa',
+				'name':'김미자',
+				'age':33,
+				'married':true,
+				'weight':78.23,
+				'toString':function(){
+					return "["+this.id+"]"+this.name+this.address; 
+				}
+		};
+	studentObject1.address='서울시';	
+		
+	var studentObject2=new Object();
+	studentObject2.id='bbb';
+	document.write("------------object출력--------------<br>");
+	document.write(studentObject1.id+"<br>");
+	document.write(studentObject1.address+"<br>");
+	document.write(studentObject1.toString()+"<br>");
+	/*******************Array******************/
+	var scoreArray1=[45,69,56,23];
+	scoreArray1.push(78);
+	/*
+	var scoreArray2=new Array();
+	scoreArray2.push(45);
+	scoreArray2.push(69);
+	scoreArray2.push(56);
+	scoreArray2.push(23);
+	scoreArray2.push(78);
+	*/
+	document.write('-------------array------------------<br>');
+	var nameArray1=["KIM","SIM","NUM","DIM","김"];
+	document.write(nameArray1+"<br>");
+	document.write(scoreArray1+"<br>");
+	document.write('-------------array push--------------<br>');
+	nameArray1.push("NEW");
+	scoreArray1.push(99);
+	document.write(nameArray1+"<br>");
+	document.write(scoreArray1+"<br>");
+	document.write('-------------array pop--------------<br>');
+	var retrunName=nameArray1.pop();
+	var retrunScore=scoreArray1.pop();
+	document.write(nameArray1+"<br>");
+	document.write(scoreArray1+"<br>");
+	document.write('-------------array shift--------------<br>');
+	nameArray1.shift();
+	scoreArray1.shift();
+	document.write(nameArray1+"<br>");
+	document.write(scoreArray1+"<br>");
+	document.write('-------------array unshift--------------<br>');
+	nameArray1.unshift("SUZI");
+	scoreArray1.unshift(33);
+	document.write(nameArray1+"<br>");
+	document.write(scoreArray1+"<br>");
+	document.write('-------------array join--------------<br>');
+	var joinStr1=nameArray1.join(":");
+	var joinStr2=scoreArray1.join(",");
+	document.write(joinStr1+"<br>");
+	document.write(joinStr2+"<br>");
+	document.write('-------------array sort--------------<br>');
+	document.write(nameArray1+"<br>");
+	document.write(scoreArray1+"<br>");
+	nameArray1.sort();
+	scoreArray1.sort();
+	document.write(nameArray1+"<br>");
+	document.write(scoreArray1+"<br>");
+	document.write("SIM">"KIM"+"<br>");
+	document.write("<br>");
+	nameArray1.sort(function(a,b){
+		if( a > b){
+			return -1;
+		}else if(a < b){
+			return 1;
+		}else if(b==a){
+			return 0;
+		}	
+	});
+	
+	scoreArray1.sort(function(a, b) {
+		if( a > b){
+			return -1;
+		}else if(a < b){
+			return 1;
+		}else if(a==b){
+			return 0;
+		}
+		
+		//return b-a;
+	})
+	document.write(nameArray1+"<br>");
+	document.write(scoreArray1+"<br>");
+	document.write('-------------array reverse--------------<br>');
+	document.write(nameArray1+"<br>");
+	document.write(scoreArray1+"<br>");
+	nameArray1.reverse();
+	document.write(nameArray1+"<br>");
+	document.write(scoreArray1+"<br>");
+	
+	
+	
+	
+	
+	
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript" src='jquery-my-0.1.js'></script>
+	<script type="text/javascript">
+	
+	window.onload = function() {
+		console.log("1."+window.$);
+		console.log("2."+window.jQuery);
+		console.log("3.factory function: "+typeof window.$);
+		console.log("4.factory function: "+typeof window.jQuery);
+		var h1jQueryWrapper = $('h1');
+		console.log("5.jQuery WrapperObject: "+h1jQueryWrapper);
+		h1jQueryWrapper.css('red');
+		$('h2').css('pink');
+		$('h3').css('red');
+		$('h4').css('yellow');
+		$('h5').css('olive');
+		$('h6').css('gold');
+		$('h1').text('factory function chage test!!');
+		var h1Text = $('h1').text();
+		alert('h1Text-->h1Text');	
+	}
+	</script>
+
+</head>
+<body>
+<h1>jQuery,$[factory function]</h1>
+<h1>jQuery,$[factory function]</h1>
+<h1>jQuery,$[factory function]</h1>
+<hr/>
+<h2>jQuery,$[factory function]</h2>
+<h3>jQuery,$[factory function]</h3>
+<h3>jQuery,$[factory function]</h3>
+<h3>jQuery,$[factory function]</h3>
+<h3>jQuery,$[factory function]</h3>
+<h4>jQuery,$[factory function]</h4>
+<h5>jQuery,$[factory function]</h5>
+<h6>jQuery,$[factory function]</h6>
+
+</body>
+</html>

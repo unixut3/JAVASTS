@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:springMavenApp" serverId="servs - Pivotal tc Server Developer Edition"/>
+  <module moduleId="org.eclipse.jst.jee.server:guest_model2_mybatis" serverId="servs - Pivotal tc Server Developer Edition"/>
+  <module moduleId="org.eclipse.jst.jee.server:guest_ajax" serverId="servs - Pivotal tc Server Developer Edition"/>
+  <module moduleId="org.eclipse.jst.jee.server:springMavenWeb" serverId="servs - Pivotal tc Server Developer Edition"/>
+  <module moduleId="org.eclipse.jst.jee.server:guest_model2_spring" serverId="servs - Pivotal tc Server Developer Edition"/>
+  <module moduleId="org.eclipse.jst.jee.server:jquery" serverId="servs - Pivotal tc Server Developer Edition"/>
+  <module moduleId="org.eclipse.jst.jee.server:ajax" serverId="servs - Pivotal tc Server Developer Edition"/>
+  <module moduleId="org.eclipse.jst.jee.server:javascript" serverId="servs - Pivotal tc Server Developer Edition"/>
+  <module moduleId="org.eclipse.jst.jee.server:javaWeb" serverId="servs - Pivotal tc Server Developer Edition"/>
+  <module moduleId="org.eclipse.jst.jee.server:springAjax" serverId="servs - Pivotal tc Server Developer Edition"/>
+</modules>

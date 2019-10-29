@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+	<!-- 1.constructor injection -->
+	<!-- primitive type -->
+	<bean id="contsructorUser0" class="com.itwill.user.User"/>
+	<bean id="contsructorUser2" class="com.itwill.user.User">
+		<constructor-arg index="0" value="guard"/>
+		<constructor-arg index="1" value="1111"/>
+		<constructor-arg index="2" value="kim"/>
+		<constructor-arg index="3" value="email"/>
+	</bean>
+		
+	<bean id="contsructorUser1" class="com.itwill.user.User">
+		<constructor-arg index="0" value="guard"/>
+		<constructor-arg index="1" value="1111"/>
+	</bean>
+	<!-- ref type -->
+	<bean id="userDao" class="com.itwill.user.UserDaoImpl"/>
+	<bean id="userService1" class="com.itwill.user.UserServiceImpl">
+		<constructor-arg index="0" ref="userDao"/>
+	</bean>
+	
+	<bean id="userService2" class="com.itwill.user.UserServiceImpl">
+		<constructor-arg index="0">
+			<bean class="com.itwill.user.UserDaoImpl"></bean>
+		</constructor-arg>
+	</bean>
+	
+	<!-- 2.setter injection -->
+	<!-- primitive type -->
+	<bean id="setUser1" class="com.itwill.user.User">
+		<property name="userId" value="aaaa"></property>
+		<property name="name" value="LEE"></property>
+		<property name="password" value="1111"></property>
+		<property name="email" value="aaaa@naver.com"></property>
+	</bean>
+	<!-- 아래 p:???? 를 사용하려면 아래 Namespaes 에서 P 체크 -->
+	<!-- 위의 방법과 같은 기능 -->
+	<bean id="setUser2" 
+		p:userId="bbbb" 
+		p:password="1111" 
+		p:name="kim"
+		p:email="bbbb@naver.com"
+		class="com.itwill.user.User"/>
+	<!-- ref type -->
+	<bean id="userService3" class="com.itwill.user.UserServiceImpl">
+		<property name="userDao" ref="userDao"></property>	
+	</bean>
+	<bean id="userService4" 
+		p:userDao-ref="userDao" 
+		class="com.itwill.user.UserServiceImpl">
+	</bean>
+	
+</beans>

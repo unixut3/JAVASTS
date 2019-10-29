@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function findById(){
+		var div1E = document.getElementById('div1');
+		console.log("div1E.innerHTML:"+div1E.innerHTML);
+		var resultDivE = document.getElementById('resultDiv');
+		resultDivE.innerHTML = div1E.innerHTML;
+	}
+</script>
+</head>
+<body>
+<h1>HTML DOM객체찾기</h1><hr/>
+<div id="div1">
+	id=div1
+</div>
+<div id="div2">
+	id=div2
+</div>
+<div id="div3">
+	id=div3
+</div>
+<div id="div4">
+	id=div4
+</div>
+<div id="resultDiv">
+	id=resultDiv
+</div>
+<div>
+	<input type="button" value="id로찾기" onclick="findById()">
+</div>
+</body>
+</html>

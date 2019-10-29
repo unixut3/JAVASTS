@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/*
+	1.JSON으로객체생성
+	*/
+	var memberJSONObject1={
+			'no':1,
+			'name':'KIM',
+			'address':'서울',
+			'setName':function(name){
+				this.name=name;
+			},
+			'getName':function(){
+				return this.name;
+			},
+			'toString':function(){
+				return '['+this.no+']'+this.name+','+this.address;
+			}
+	};
+	var memberJSONObject2={};
+	memberJSONObject2.no=2;
+	memberJSONObject2.name='김희선';
+	memberJSONObject2.address='부산';
+	memberJSONObject2.setName = function(name){
+		this.name=name;
+	};
+	memberJSONObject2.getName = function(){
+		return this.name;
+	};
+	memberJSONObject2.toString = function(){
+		return '['+this.no+']'+this.name+','+this.address;
+	};
+	/*
+	2.생성자 함수(???)로 객체생성
+	*/
+	var memberJSObject1=new Object();//{}
+	memberJSObject1.no=3;
+	memberJSObject1.name='동건';
+	memberJSObject1.address='강동구';
+	memberJSObject1.setName = function(name){
+		this.name=name;
+	};
+	memberJSObject1.getName = function(){
+		return this.name;
+	};
+	memberJSObject1.toString = function(){
+		return '['+this.no+']'+this.name+','+this.address;
+	};
+	
+	
+	var memberArray=[memberJSObject1,memberJSONObject1,memberJSONObject2];
+	/*
+	var memberArray=[
+						{'no':1,'name':'kim',address:'서울'},
+						{'no':2,'name':'lee',address:'부산'},
+						{'no':3,'name':'choi',address:'대구'}
+					];
+	*/
+</script>
+</head>
+<body>
+<h1>javascript object1</h1>
+	<script type="text/javascript">
+		document.write('<ul>');
+		document.write('<li>---객체멤버변수,메쏘드접근---</li>');
+		document.write("<li>"+memberJSONObject1.no+"</li>");
+		document.write("<li>"+memberJSONObject1.address+"</li>");
+		document.write("<li>"+memberJSONObject1.name+"</li>");
+		memberJSONObject1.setName("이름변경");
+		document.write("<li>"+memberJSONObject1.getName()+"</li>");
+		document.write("<li>"+memberJSONObject1.toString()+"</li>");
+		document.write("<li>----------멤버Array접근-----------</li>");		
+		document.write("<li>"+memberArray[0].no+"</li>");
+		document.write("<li>"+memberArray[0].name+"</li>");
+		document.write("<li>"+memberArray[0].address+"</li>");
+		document.write("<li>"+memberArray[0].toString()+"</li>");
+		
+		for (var i = 0; i < memberArray.length; i++) {
+			document.write("<li>"+memberArray[i].toString()+"</li>");			
+		}
+		document.write('</ul>');
+	
+	
+	</script>
+</body>
+</html>

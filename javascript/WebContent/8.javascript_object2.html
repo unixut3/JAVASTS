@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/* 
+	자바스크립트 배열객체생성
+	1. JSON -->[]
+	2. 생성자함수(Array)
+		var array = new Array();
+ */
+	//1.JSON
+	var noArray=[1,2,3,4,5];
+ 	var nameArray=["kim","lee","park","choi","jo"];
+ 	var jsObjextArray=[
+ 						{'no':1,'name':'김'},
+ 						{'no':2,'name':'이'},
+ 						{'no':3,'name':'박'},
+ 						{'no':4,'name':'최'},
+ 						{'no':5,'name':'조'},
+ 						];
+	//2. 생성자함수
+	var noArray2=new Array(1,2,3,4,5);
+	var nameArray2=new Array(['kim','lee','park','choi','jo']);
+	var jsObjectArray=new Array([
+				{'no':1,'name':'김'},
+				{'no':2,'name':'이'},
+				{'no':3,'name':'박'},
+				{'no':4,'name':'최'},
+				{'no':5,'name':'조'},
+				]);
+	
+	/**************생성자함수*******************/
+	var str = new String("test");
+	var num = new Number(23);
+	var obj = new Object();
+	var array = new Array();
+	//var student = new Student(1,'김',35,66,12);
+	//var member = new Member();
+	/****************************************/
+	/****************학생성적처리******************/
+	var StudentObject1={
+			'id':'zzz',
+			'name':'lim',
+			'kor':'99',
+			'eng':'45',
+			'math':'64',
+			'tot':'0',
+			'avg':'0.0',
+			calculateTot:function(){
+				this.tot=this.kor+this.eng+this.math;
+			},
+			calculateAvg:function(){
+				this.avg=this.tot/3.0;
+			},
+			toString:function(){
+				return '['+this.id+']'+this.name+','+this.kor+','+this.eng+','+this.math+','+this.tot+', '+this.avg;
+			}
+	};
+	var StudentObject2={
+			'id':'kkk',
+			'name':'kim',
+			'kor':29,
+			'eng':65,
+			'math':47,
+			'tot':0,
+			'avg':0.0,
+			calculateTot:function(){
+				this.tot=this.kor+this.eng+this.math;
+			},
+			calculateAvg:function(){
+				this.avg=this.tot/3.0;
+			},
+			toString:function(){
+				return '['+this.id+']'+this.name+','+this.kor+','+this.eng+','+this.math+','+this.tot+', '+this.avg;
+			}
+	};
+	
+	var studentArray=[StudentObject1,StudentObject2];
+	
+</script>
+</head>
+<body>
+<h1>javascript object2</h1>
+<script type="text/javascript">
+	document.write("<ol>");
+	document.write("<li>"+studentArray[0].id +"</li>");
+	document.write("<li>"+studentArray[0].name +"</li>");
+	document.write("<li>"+studentArray[0].kor +"</li>");
+	document.write("<li>"+studentArray[0].eng +"</li>");
+	document.write("<li>"+studentArray[0].math +"</li>");
+	studentArray[0].calculateTot();
+	studentArray[0].calculateAvg();
+	document.write("<li>"+studentArray[0].tot +"</li>");
+	document.write("<li>"+studentArray[0].avg +"</li>");
+	document.write("<li>"+studentArray[0].toString() +"</li>");
+	document.write("-----------------student 리스트------------------");
+	for (var i = 0; i < studentArray.length; i++) {
+		studentArray[i].calculateTot();
+		studentArray[i].calculateAvg();
+		document.write("<li>"+studentArray[i].toString()+"</li>");
+	}
+	
+	document.write("</ol>");
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

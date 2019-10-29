@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+<!-- 
+	#1. << js파일 다운로드후(local)사용 >>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+ -->
+
+ <!-- 
+ <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  -->
+ 
+ <script type="text/javascript" src="jquery-3.4.1.js"></script>
+<!-- 
+	#2. << CDN 호스트사용 >>
+ -->
+<script type="text/javascript">
+	console.log("1."+window.$);
+	console.log("2."+window.jQuery);
+	console.log("3.factory function: "+typeof window.$);
+	console.log("3.factory function: "+typeof window.jQuery);
+	
+	/*
+	 jQuery()[$()] $: Jquery factoryfunction
+	 jQuery의 가장 기본적인 동작은 도큐먼트의 일부를 선택하는 것이다
+	 jQuery() 팩토리함수를 사용해서 선택을 수행한다.
+	 이함수의 인자는 문자열(표준객체)이며 CSS선택자 표현을 포함할 수 있다.
+	 
+	 jQuery()함수는 우리가 작업하는 대상객체(jQueryWrapper객체)를 만들어내는 ,
+	 jQuery의 Wrapper 객체생성 공장같은 역할을 한다.
+	 jQuery객체는 여러개의 DOM요소를 캡슐화 할 수 있으며 
+	 이것을 다양한 방식으로 다룰 수 있게 해준다.
+	 */
+	 
+	/* 호출을 해보자 */
+	window.onload=function(){
+		/* 
+		DOM tree loading후 rendering전에 호출
+		*/
+		/*
+		var h1JqueryWrapper1 = jQuery('h1');
+		console.log(h1JqueryWrapper1);
+		var h1JqueryWrapper2 = $('h1');
+		console.log(h1JqueryWrapper2);
+		
+		h1JqueryWrapper1.text('hello jQuery Change!!');
+		var h1text = h1JqueryWrapper1.text();
+		alert("h1 text-->"+h1text);
+		
+		h1JqueryWrapper1.css('color','gold');
+		
+		- 아래처럼 jQuery명령어를 $ 로 간단하게 가능함. 
+		
+		$('h2').css('color','blue');
+		jQuery('h3').css('color','orange');
+		$('h4').css('border','1px solid red');
+		$('h5').css('color','olive');
+		console.log($('h2'));		
+		console.log($('h3'));		
+		console.log(jQuery('h4'));		
+		console.log($('h5'));		
+		*/
+	}
+	
+		$(document).ready(function() {
+			
+			/* 
+			DOM tree loading후 rendering전에 호출
+			*/
+			/*			
+			var h1JqueryWrapper1 = jQuery('h1');
+			console.log(h1JqueryWrapper1);
+			var h1JqueryWrapper2 = $('h1');
+			console.log(h1JqueryWrapper2);
+			
+			h1JqueryWrapper1.text('hello jQuery Change!!');
+			var h1text = h1JqueryWrapper1.text();
+			alert("h1 text-->"+h1text);
+			
+			h1JqueryWrapper1.css('color','gold');
+			
+			 아래처럼 jQuery명령어를 $ 로 간단하게 가능함.
+			
+			$('h2').css('color','blue');
+			jQuery('h3').css('color','orange');
+			$('h4').css('border','1px solid red');
+			$('h5').css('color','olive');
+			console.log($('h2'));		
+			console.log($('h3'));		
+			console.log(jQuery('h4'));		
+			console.log($('h5'));		
+			*/
+		});
+	
+		$(function() {
+			/* 
+			DOM tree loading후 rendering전에 호출
+			*/
+			var h1JqueryWrapper1 = jQuery('h1');
+			console.log(h1JqueryWrapper1);
+			var h1JqueryWrapper2 = $('h1');
+			console.log(h1JqueryWrapper2);
+			
+			h1JqueryWrapper1.text('hello jQuery Change!!');
+			var h1text = h1JqueryWrapper1.text();
+			alert("h1 text-->"+h1text);
+			
+			h1JqueryWrapper1.css('color','gold');
+			
+			/* 아래처럼 jQuery명령어를 $ 로 간단하게 가능함. */
+			
+			$('h2').css('color','blue');
+			jQuery('h3').css('color','orange');
+			$('h4').css('border','1px solid red');
+			$('h5').css('color','olive');
+			console.log($('h2'));		
+			console.log($('h3'));		
+			console.log(jQuery('h4'));		
+			console.log($('h5'));			
+		});
+	
+</script>
+</head>
+<body>
+	<pre> 
+	1.HTML 자체에 스크립트코드를 기술하면 새로운 행위를 추가하려면 
+      모든HTML 페이지에 걸쳐 코드와 HTML 둘다 변경해야하며 
+      이작업은 더많은 오류를 가져올가능성이
+      있으며 프로그래머와 디자이너의 병행작업을 어렵게한다. 
+    	
+    2.이런이유로 jQuery는 $(document).ready()메소드를 제공한는데 
+      	이메소드는 DOM 이 로드되고 이미지가 로드 되기전에 특정한 작업을 수행할 수 있다
+    	
+    	$(document).ready(highlight2);
+    	
+    3.함수를 1번만사용한다면 $(document).ready()메쏘드안에 
+      익명함수(람다함수)로정의하고 
+      호출되게할수있다
+    	
+    	$(document).ready(
+    		function(){
+    			$('h3').css('border','3px dashed orange');	
+    		}
+    	);
+	</pre>
+
+	<h1>Hello jQuery!!</h1>
+	<h2>Nice to meet you!!!</h2>
+	<h3>See you!!!1</h3>
+	<h3>See you!!!2</h3>
+	<h3>See you!!!3</h3>
+	<h3>See you!!!4</h3>
+	<h3>See you!!!5</h3>
+	<h4>Bye Bye!!!</h4>
+	<h4>Bye Bye!!!</h4>
+	<h4>Bye Bye!!!</h4>
+	<h4>Bye Bye!!!</h4>
+	<h4>Bye Bye!!!</h4>
+	<h5>Bye Bye!!!</h5>
+	<h5>Bye Bye!!!</h5>
+	<h5>Bye Bye!!!</h5>
+	<h5>Bye Bye!!!</h5>
+	<h5>Bye Bye!!!</h5>
+	<h5>Bye Bye!!!</h5>
+	<h5>Bye Bye!!!</h5>
+
+</body>
+</html>

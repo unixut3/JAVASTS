@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src='httpRequestConstructorFunction.js'></script>
+<script type="text/javascript">
+	function showForm(){
+		new AjaxRequest('guest_write_form.html',null,displayForm,'GET');
+	}
+	function displayForm(xhr){
+		if(xhr.readyState==4){
+			var htmlText = xhr.responseText;
+			document.getElementById('formContent').innerHTML = htmlText;
+		}
+	}
+	function hideForm(){
+		document.getElementById('formContent').innerHTML='';
+	}
+</script>
+</head>
+<body>
+<input type="button" value="회원가입폼" onclick="showForm();">
+<input type="button" value="회원가입취소" onclick="hideForm();">
+<div id='formContent'>
+
+</div>
+</body>
+</html>

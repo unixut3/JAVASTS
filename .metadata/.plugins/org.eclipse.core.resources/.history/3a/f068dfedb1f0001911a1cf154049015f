@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WELCOME TO JQUERY</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="guest.css" type="text/css" media="screen" />
+<style type="text/css">
+
+input.error, textarea.error{
+	border: 1px solid red;
+}
+
+label.error {
+	margin-left: 10px;
+	color: orange;
+}
+
+.valid{
+	border: 1px solid green; 
+}
+
+</style>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<!-- 
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+ -->
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/localization/messages_ko.js"></script>
+<!--
+<script src="guest.js" type="text/javascript"></script>
+<script src="./js/jquery.validate.js" type="text/javascript"></script>
+ -->
+<script type="text/javascript">
+/**********방명록리스트[html]************/
+function guest_list_html_function(){
+	$.ajax({
+		url:'guest/guest_list_html.jsp',
+		dataType:"html",
+		data:null,
+		success:function(htmlData){
+			$('#guest_list').html(htmlData);
+		},
+		//오류상태에 따라 명령어 지정
+		statusCode: {
+			200:function(){console.log('200')},
+			500:function(){console.log('500')},
+			404:function(){console.log('404')},
+			403:function(){console.log('403')}
+		}
+	});
+}
+/**********방명록리스트[JSON]************/
+function guest_list_json_function(){
+}
+/**********방명록리스트[XML]************/
+function guest_list_xml_function(){
+}
+/*********방명록 쓰기폼로드*****************/
+function guest_insert_form_load_function(){
+	$('#guest_list').load('guest_insert_form.html');
+}
+
+
+/**********방명록상세보기[HTML]************/
+function guest_detail_html_function(h3E){
+	var guest_no = $(h3E).attr('guest_no');
+	var params='guest_no='+guest_no;
+	if($(h3E).parent().children().length > 1){
+		//상세정보 존재함
+		$(h3E).siblings().slideToggle();
+	}else{
+		//상세정보 존재안함(ajax요청)
+		$.ajax({
+			'url':'guest/guest_detail_html.jsp',
+			'method':'GET',
+			'data':params,
+			'dataType': "html",
+			'success':function(htmlData){
+				$(h3E).parent().append(htmlData);
+				$(h3E).siblings().slideToggle();
+			}
+		});
+	}
+}
+/**********방명록상세보기[JSON]************/
+function guest_detail_json_function(h3E){
+}
+/**********방명록상세보기[XML]************/
+function guest_detail_xml_function(h3E){
+}
+/*********방명록 쓰기*****************/
+function guest_insert_action_function(){
+}
+/*********방명록 쓰기[validator plugin]*****************/
+function guest_write_action_validation_function(){
+}
+/*********방명록 로그인*****************/
+function guest_login_action_function(){
+	//유효성체크
+	$.ajax({
+		url:'guest/guest_login_action.jsp',
+		method: "POST",
+		data: $('#guest_login_form').serialize(),
+		dataType: "text",
+		success:function(textData){
+			if(textData.trim()=='success'){
+				$('#guest_login_form').hide();
+				$('#idSpan').html($('#guest_login_form #guest_id').val());
+				$('#guest_logout_form').show();
+			}else if(textData.trim()=='fail'){
+				$('#msg').html('로그인실패').css('color','red');
+				$('#guest_login_form #guest_id').select();
+			}
+		}
+	});
+}
+/*********방명록 로그인[validator plugin]*****************/
+function guest_login_action_validation_function(){
+}
+/*********방명록 로그아웃*****************/
+function guest_logout_action_function(){
+	$.ajax({
+		url:'guest/guest_logout_action.jsp',
+		method:"POST",
+		success:function(){
+			$('#guest_login_form').show();
+			$('#guest)logout_form').hide();
+		}
+		
+		
+	});	
+}
+function login_check(){
+}
+/*%%%%%%%%%%%%%%%%%%%DOM트리로딩후 메뉴이벤트처리%%%%%%%%%%%%%%%%%%%%%%*/ 	
+$(function(){
+	/**************************************/
+	/**방명록리스트[html]이벤트처리**/
+	$('#menu-a a').click(function(e){
+		guest_list_html_function();
+		e.preventDefault();
+	});
+	/**방명록리스트[JSON]이벤트처리**/
+	$('#menu-b a').click(function(e){
+		guest_list_json_function();
+		e.preventDefault();
+	});
+	/**방명록리스트[XML]이벤트처리***/
+	$('#menu-c a').click(function(e){
+		guest_list_xml_function();
+		e.preventDefault();
+	});
+	/**방명록쓰기폼이벤트처리******/
+	$('#menu-d a').click(function(e) {
+		guest_insert_form_load_function();
+		e.preventDefault();
+	});
+	
+	/**방명록상세보기이벤트처리[동적이벤트처리]******/
+	// 현재DOM Tree에 동적이벤트추가에는 항상 상위엘레멘트의 참조가필요
+	$(document).on('click','guest_title',function(e){
+		/* 
+		e.target-->h3
+		this    -->h3
+		*/
+		console.log(e.tartet);
+		console.log(this);
+		guest_detail_html_function(this);
+		//guest_detail_json_function(this);
+		//guest_detail_xml_function(this);
+		
+		e.preventDefault();
+	});
+	/**방명록로그아웃이벤트처리******/
+	$(document).on('click','#guest_logout_from a',function(e){
+		guest_logout_action_function();
+	});
+	/**방명록로그인이벤트처리********/
+	$(document).on('submit','#guest_login_form',function(){
+		guest_login_action_function();
+	});
+	
+	/************form validator**************
+	 https://jqueryvalidation.org/
+	    1. .validate() function은 DOM tree loading시에 미리 호출되어있어야한다.
+	    2. .validate() function은 DOM tree insert 될때 미리 호출되어있어야한다.
+	*****************************************/
+	/**방명록로그인이벤트처리.validate() function 호출[validator plugin]**/
+	$('#guest_login_form').validate({
+		rules:{
+			guest_id:{
+				required:true,
+				minlength:3,
+				maxlength:10,
+				remote: {
+					url: "guest/guest_duplicate_id_check.jsp",
+					type: "GET",
+					data:{
+						guest_id:function(){
+						return $('#guest_id').val();
+						}
+					}
+				}
+			},
+			guest_pass:{
+				required:true,
+				minlength: "3",
+				maxlength: "10"
+			}
+			
+		},
+		messages: {
+			guest_id:{
+				required:'아이디를 입력하세요',
+				minlength:'{0}글자이상입니다',
+				maxlength:'{0}글자이하입니다',
+				remote:"중복된아이디입니다."
+			},
+			guest_pass:{
+				required:'패쓰워드를 입력하세요',
+				minlength:'{0}글자이상입니다',
+				maxlength:'{0}글자이하입니다'
+			}
+			
+		},
+		submitHandler:function(){
+			//유효성을통과하면 호출
+			guest_login_action_function();
+		}
+	
+	});
+	
+	/**방명록쓰기이벤트처리.validate() function 호출[validator plugin]**/
+	$(document).on('DOMNodeInserted','#guest_write_form',function(){
+		
+		$('#guest_write_form').validate({
+			submitHandler: function(){
+				alert('submit');	
+			}
+		});
+		
+	})
+	
+	/****************jQuery ajax global event handler************/
+	$(document).ajaxStart(function(){
+		console.log($('<div>loading...</div>'));
+		$("<div id='loading'>loading...</div>").insertBefore('#guest_list').show();
+	});
+	$(document).ajaxComplete(function(){
+		$('#loading').hide();
+		$('#loading').remove();
+	});
+	$(document).ajaxSuccess();
+	$(document).ajaxError();
+	
+});
+</script>
+</head>
+<body>
+	<div  id="container">
+		<div id="header">
+			<h1>WELCOME TO JQUERY</h1>
+		</div>
+		<div id="sidebar">
+
+			<h2>회원관리메뉴</h2>
+			<div class="menus">
+				<div class="menu" id="menu-a">
+					<h3>
+						<a href="test.jsp">방명록 리스트[html]</a>
+					</h3>
+				</div>
+				<div class="menu" id="menu-b">
+					<h3>
+						<a href="#">방명록 리스트[json]</a>
+					</h3>
+				</div>
+				<div class="menu" id="menu-c">
+					<h3>
+						<a href="#">방명록 리스트[xml]</a>
+					</h3>
+				</div>
+				<div class="menu" id="menu-d">
+					<h3>
+						<a href="#">방명록 쓰기</a>
+					</h3>
+				</div>
+				
+				<div class="menu" id="menu-e">
+					<h3>
+						<a href="#">json</a>
+					</h3>
+				</div>
+				
+				<div class="menu" id="menu-f">
+					<h3>
+						<a href="#">xml</a>
+					</h3>
+				</div>
+
+				<form id="guest_login_form" method="get" action="vfbfcv">
+					<fieldset>
+						<legend>로그인</legend>
+						<p>
+							<label for="guest_id">아이디:</label>
+							<input type="text" placeholder="아이디"
+								id="guest_id" name="guest_id" />
+						</p>
+						<p>
+							<label for="guest_pass">패쓰워드:</label> 
+							<input type="text" placeholder="패쓰워드"
+								name="guest_pass" id="guest_pass" />
+						</p>
+						<p>
+							<input type="submit" name="write" value="로그인" id="write" /> <input
+								type="reset" name="cancle" value="취소" id="cancle" />
+
+						</p>
+						<div id="msg"></div>
+					</fieldset>
+				</form>
+				<form id="guest_logout_form">
+					<div>
+						<span id="idSpan"></span>님 로그인<br />
+						<a href='#'>로그아웃</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="content">
+			<div id="guest_list"></div>
+		</div>
+		<div id="footer">
+			<p>This page was built for jquery demonstration purposes.</p>
+		</div>
+
+	</div>
+
+</body>
+</html>

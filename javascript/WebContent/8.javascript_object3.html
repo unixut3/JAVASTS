@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/* 
+	학생 객체를 생성하기위한 함수작성 
+ */
+	
+ 	function createStudent(id,name,kor,eng,math){
+		
+		var studentObject={
+				'id':id,
+				'name':name,
+				'kor':kor,
+				'eng':eng,
+				'math':math,
+				'tot':0,
+				'avg':0.0,
+				calculateTot:function(){
+					this.tot=this.kor+this.eng+this.math;
+				},
+				calculateAvg:function(){
+					this.avg=this.tot/3.0;
+				},
+				toString:function(){
+					return '['+this.id+']'+this.name+','+this.kor+','+this.eng+','+this.math+','+this.tot+', '+this.avg;
+				}
+		};
+		return studentObject; 
+}
+	var studentObject1 = createStudent('xxx', 'xim', 22, 33, 44); 
+	var studentObject2 = createStudent('aaa', 'aim', 22, 43, 64); 
+	
+	var studentArray=[studentObject1,
+						studentObject2,
+						createStudent('zzw', 'asd2', 13, 56, 78)];
+	
+</script>
+</head>
+<body>
+<h1>javascript object3</h1>
+<script type="text/javascript">
+	document.write("<ol>");
+	document.write("<li>"+studentArray[0].id +"</li>");
+	document.write("<li>"+studentArray[0].name +"</li>");
+	document.write("<li>"+studentArray[0].kor +"</li>");
+	document.write("<li>"+studentArray[0].eng +"</li>");
+	document.write("<li>"+studentArray[0].math +"</li>");
+	studentArray[0].calculateTot();
+	studentArray[0].calculateAvg();
+	document.write("<li>"+studentArray[0].tot +"</li>");
+	document.write("<li>"+studentArray[0].avg +"</li>");
+	document.write("<li>"+studentArray[0].toString() +"</li>");
+	document.write("-----------------student 리스트------------------");
+	for (var i = 0; i < studentArray.length; i++) {
+		studentArray[i].calculateTot();
+		studentArray[i].calculateAvg();
+		document.write("<li>"+studentArray[i].toString()+"</li>");
+	}
+	
+	document.write("</ol>");
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

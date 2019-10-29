@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>javascript 연산자</h1>
+<script type="text/javascript">
+	var no = 23;
+	switch (no % 2) {
+	case 0:
+		document.write(no+" 는 짝수<br>");
+		break;
+	case 1:
+		document.write(no+" 는 홀수<br>");
+		break;
+	}
+	/*
+	삼항연산자
+	*/
+	document.write("---------삼항연산자------------<br>");
+	
+	true ? alert('true left') : alert("flase right"); 
+	false ? alert('true left') : alert("flase right"); 
+	var result1 = true ? 'ture left' : 'flase right';
+	var result2 = false ? 'ture left' : 'flase right';
+	document.write('result1-->'+result1+"<br>");
+	document.write('result2-->'+result2+"<br>");
+	
+	var level=78
+	var msg=(level>0) ? '양수' : '음수';
+	document.write('msg-->'+msg+'<br>');
+	
+	/* 
+	<<배열객체생성>>
+	Array(생성자함수) , [](JSON)
+	*/
+	var nameArray=["김","이","박","최","한"];
+	for (var i = 0; i < nameArray.length; i++) {
+		document.write(nameArray[i]);
+	}
+
+</script>
+</body>
+</html>

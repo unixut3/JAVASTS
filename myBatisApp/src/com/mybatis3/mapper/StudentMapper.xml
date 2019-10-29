@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis3.mapper.StudentMapper">
+	<!-- ##############resultMap################ -->
+	<resultMap  id="studentResultMap" 
+				type="Student">
+		<result column="stud_id" property="studId"/>
+		<result column="name" property="name"/>
+		<result column="email" property="email"/>
+		<result column="dob" property="dob"/>
+	</resultMap>
+	
+	
+	<resultMap  id="studentExtendsWithAddressResultMap" 
+				type="com.mybatis3.domain.Student"
+				extends="studentResultMap">
+		<result column="addr_id" property="address.addrId"/>
+		<result column="street" property="address.street"/>
+		<result column="city" property="address.city"/>
+		<result column="state" property="address.state"/>
+		<result column="country" property="address.country"/>
+		<result column="zip" property="address.zip"/>
+	</resultMap>
+	<resultMap  id="studentWithAddressResultMap" 
+				type="com.mybatis3.domain.Student">
+		<result column="stud_id" property="studId"/>
+		<result column="name" property="name"/>
+		<result column="email" property="email"/>
+		<result column="dob" property="dob"/>
+		<result column="addr_id" property="address.addrId"/>
+		<result column="street" property="address.street"/>
+		<result column="city" property="address.city"/>
+		<result column="state" property="address.state"/>
+		<result column="country" property="address.country"/>
+		<result column="zip" property="address.zip"/>
+	</resultMap>
+	
+	<resultMap  id="studentAssocaiteAddressResultMap" 
+				type="com.mybatis3.domain.Student">
+		<result column="stud_id" property="studId"/>
+		<result column="name" property="name"/>
+		<result column="email" property="email"/>
+		<result column="dob" property="dob"/>
+		<association property="address" 
+					 javaType="com.mybatis3.domain.Address" >
+			<result column="addr_id" property="addrId"/>
+			<result column="street" property="street"/>
+			<result column="city" property="city"/>
+			<result column="state" property="state"/>
+			<result column="country" property="country"/>
+			<result column="zip" property="zip"/>		 
+		</association>		
+	</resultMap>
+	
+	<resultMap  id="studentAssocaiteAddressResultMapAddressMapper" 
+				type="com.mybatis3.domain.Student">
+		<result column="stud_id" property="studId"/>
+		<result column="name" property="name"/>
+		<result column="email" property="email"/>
+		<result column="dob" property="dob"/>
+		<association property="address" 
+		resultMap="com.mybatis3.mapper.AddressMapper.addressResultMap"/> 
+	</resultMap>
+	<!--  AddressMapper.findAddressById 사용 [Nested select(조인아님)]-->
+	<resultMap  id="studentAssociateAddressNestedSelectResultMap" 
+				type="com.mybatis3.domain.Student">
+		<result column="stud_id" property="studId"/>
+		<result column="name" property="name"/>
+		<result column="email" property="email"/>
+		<result column="dob" property="dob"/>
+		<association property="address" 
+		column="addr_id"
+		select="com.mybatis3.mapper.AddressMapper.findAddressById"/> 
+	</resultMap>
+	
+	<!-- @@@@@@@@@@ selectOne(객체1개반환) @@@@@@@@@@@@@ -->
+	<!-- resultType: Student(DTO) -->
+	<select id="findStudentById" 
+			resultType="com.mybatis3.domain.Student"
+			parameterType="java.lang.Integer">
+		select stud_id as studid,name,email,dob 
+		from students 
+		where stud_id = #{studId}
+	</select>
+	<!--resultType:String -->
+	<select id="findStudentNameById" 
+			parameterType="java.lang.Integer"
+			resultType="java.lang.String">
+		select name from students
+		where stud_id=#{studId}
+	</select>
+	<!-- resultType:Map -->
+	<select id="findStudentByIdMap" 
+			resultType="java.util.HashMap"
+			parameterType="java.lang.Integer">
+		select stud_id as studid,name,email,dob 
+		from students 
+		where stud_id = #{studId}
+	</select>
+	
+	
+	<!-- resultMap: Student(DTO) -->
+	<select id="findStudentByIdResultMap" 
+			resultMap="studentResultMap"
+			parameterType="java.lang.Integer">
+		select stud_id ,name,email,dob 
+		from students 
+		where stud_id = #{studId}
+	</select>
+	<!-- resultMap Student(DTO)[STUDENTS+ADDRESSES 조인] -->
+	<select id="findStudentByIdWithAddressResultMap"
+			parameterType="java.lang.Integer"
+			resultMap="studentAssocaiteAddressResultMapAddressMapper">
+		select stud_id, name, email,dob, a.addr_id, street, city, state, zip, country
+  		FROM students s 
+        left outer join addresses a 
+        on s.addr_id=a.addr_id
+		where stud_id=#{studId}
+	</select>
+	<!-- resultMap Student(DTO)[STUDENTS 조인아님] -->
+	<select id="findStudentByIdWithAddressNestedSelectResultMap" 
+			resultMap="studentAssociateAddressNestedSelectResultMap"
+			parameterType="java.lang.Integer">
+		select stud_id ,name,email,dob,addr_id 
+		from students 
+		where stud_id = #{studId}
+	</select>
+	
+	<!-- @@@@@@@@@@ selectList(객체여러개반환) @@@@@@@@@@@@@ -->
+	<!-- resultType: Student(Dto) List-->
+	<select id="findAllStudents" 
+			resultType="com.mybatis3.domain.Student">
+		select stud_id as studid ,name,email,dob 
+		from students
+	</select>
+	<!-- resultType: HashMap List-->
+	<select id="findAllStudentsMap" 
+			resultType="hashmap">
+		select stud_id as studid ,name,email,dob 
+		from students
+	</select>
+	
+	
+	<!-- resultMap: Student(Dto) List-->
+	<select id="findAllStudentsResultMap" 
+			resultMap="studentResultMap">
+		select stud_id ,name,email,dob 
+		from students
+	</select>
+	<!-- resultMap Student(DTO) List [STUDENTS+ADDRESSES 조인] -->
+	<select id="findAllStudentsWithAddressResultMap"
+			resultMap="studentAssocaiteAddressResultMap">
+		select stud_id, name, email,dob, a.addr_id, street, city, state, zip, country
+  		FROM students s 
+        left outer join addresses a 
+        on s.addr_id=a.addr_id
+	</select>
+	<!--@@@@@@@@@@@@@@@@@@ insert @@@@@@@@@@@@@@@@@@@@@@  -->
+	<insert id="insertStudent" 
+			parameterType="com.mybatis3.domain.Student">
+		insert into students(stud_id,name,email,dob)
+		values(#{studId},#{name},#{email},#{dob})
+	</insert>
+	<insert id="insertStudentBySequence1" 
+			parameterType="com.mybatis3.domain.Student">
+		insert into students(stud_id,name,email,dob)
+		values(STUDENTS_STUD_ID_SEQ.nextval,#{name},#{email},#{dob})
+	</insert>
+	<insert id="insertStudentBySequence2" 
+			parameterType="com.mybatis3.domain.Student">
+		<selectKey 
+			resultType="java.lang.Integer" 
+			order="BEFORE"
+			keyProperty="studId">
+			select STUDENTS_STUD_ID_SEQ.nextval from dual
+		</selectKey>	
+		insert into students(stud_id,name,email,dob)
+		values(#{studId},#{name},#{email},#{dob})
+	</insert>
+	<!--@@@@@@@@@@@@@@@@@@ delete @@@@@@@@@@@@@@@@@@@@@@  -->
+	<delete id="deleteStudentById" parameterType="int">
+		delete from students
+		where stud_id=#{studId}
+	</delete>
+	<delete id="deleteStudentByName" parameterType="string">
+		delete from students
+		where name=#{name}
+	</delete>
+	<!--@@@@@@@@@@@@@@@@@@ update @@@@@@@@@@@@@@@@@@@@@@  -->
+	<update id="updateStudent" parameterType="Student">
+		update students set name=#{name},email=#{email},dob=#{dob}
+		where stud_id=#{studId}
+	</update>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+

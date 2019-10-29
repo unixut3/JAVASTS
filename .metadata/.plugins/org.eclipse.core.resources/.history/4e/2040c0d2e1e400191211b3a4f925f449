@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var jsObject = {
+			'func1':function(){
+				console.log(this);
+			}
+	};
+	
+	function add(){
+		console.log(this);
+	}
+	function contextChange(){
+		console.log("context객체 this-->"+this);
+	}
+</script>
+</head>
+<body>
+<h1>javascript this 참조변수</h1>
+<script type="text/javascript">
+	window.add();
+	add();
+	jsObject.func1();
+	
+</script>
+</body>
+</html>

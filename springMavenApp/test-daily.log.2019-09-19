@@ -1,0 +1,259 @@
+2019-09-19 09:36:50,547 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:36:50 KST 2019]; root of context hierarchy
+2019-09-19 09:36:50,586 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 09:37:01,491 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:37:01 KST 2019]; root of context hierarchy
+2019-09-19 09:37:01,527 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 09:39:12,138 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:39:12 KST 2019]; root of context hierarchy
+2019-09-19 09:39:12,171 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 09:39:23,953 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:39:23 KST 2019]; root of context hierarchy
+2019-09-19 09:39:23,988 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-1.spring_datasourse.xml]
+2019-09-19 09:39:24,110 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 09:39:24,192 INFO  [main] datasource.DriverManagerDataSource (DriverManagerDataSource.java:133)     - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2019-09-19 09:39:24,604 DEBUG [main] datasource.DriverManagerDataSource (DriverManagerDataSource.java:142)     - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@182.237.126.19:1521:XE]
+2019-09-19 09:39:59,121 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:39:59 KST 2019]; root of context hierarchy
+2019-09-19 09:39:59,155 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-1.spring_datasourse.xml]
+2019-09-19 09:39:59,280 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 09:39:59,363 INFO  [main] datasource.DriverManagerDataSource (DriverManagerDataSource.java:133)     - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2019-09-19 09:40:12,644 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:40:12 KST 2019]; root of context hierarchy
+2019-09-19 09:40:12,677 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-1.spring_datasourse.xml]
+2019-09-19 09:40:12,804 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 09:40:12,890 INFO  [main] datasource.DriverManagerDataSource (DriverManagerDataSource.java:133)     - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2019-09-19 09:40:13,296 DEBUG [main] datasource.DriverManagerDataSource (DriverManagerDataSource.java:142)     - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@182.237.126.19:1521:XE]
+2019-09-19 09:40:33,594 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:40:33 KST 2019]; root of context hierarchy
+2019-09-19 09:40:33,626 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-2.user_dao_jdbc.xml]
+2019-09-19 09:40:33,749 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 09:44:48,513 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:44:48 KST 2019]; root of context hierarchy
+2019-09-19 09:44:48,548 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-2.user_dao_jdbc.xml]
+2019-09-19 09:44:48,673 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 09:44:52,829 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:44:52 KST 2019]; root of context hierarchy
+2019-09-19 09:44:52,863 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-2.user_dao_jdbc.xml]
+2019-09-19 09:44:52,984 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 09:45:12,053 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:45:12 KST 2019]; root of context hierarchy
+2019-09-19 09:45:12,087 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-2.user_dao_jdbc.xml]
+2019-09-19 09:45:12,209 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 09:45:19,664 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:45:19 KST 2019]; root of context hierarchy
+2019-09-19 09:45:19,697 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-2.user_dao_jdbc.xml]
+2019-09-19 09:45:19,819 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 09:46:19,208 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:46:19 KST 2019]; root of context hierarchy
+2019-09-19 09:46:19,241 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-2.user_dao_jdbc.xml]
+2019-09-19 09:46:19,366 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 09:48:44,026 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:48:44 KST 2019]; root of context hierarchy
+2019-09-19 09:48:44,061 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 09:54:18,707 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:54:18 KST 2019]; root of context hierarchy
+2019-09-19 09:54:18,741 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 09:54:18,858 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 09:54:27,547 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:54:27 KST 2019]; root of context hierarchy
+2019-09-19 09:54:27,581 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 09:54:27,698 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 09:54:37,508 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:54:37 KST 2019]; root of context hierarchy
+2019-09-19 09:54:37,542 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user_annotation.xml]
+2019-09-19 09:54:37,660 INFO  [main] support.DefaultListableBeanFactory (DefaultListableBeanFactory.java:829)     - Overriding bean definition for bean 'userDao': replacing [Generic bean: class [com.itwill.user.annotation.UserDaoImplAnnotation]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\java_bigdata\workspaceSpring\springMavenApp\target\classes\com\itwill\user\annotation\UserDaoImplAnnotation.class]] with [Generic bean: class [com.itwill.user.annotation.UserServiceImplAnnotation]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [com/itwill/user/99.user_annotation.xml]]
+2019-09-19 09:55:15,114 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 09:55:15 KST 2019]; root of context hierarchy
+2019-09-19 09:55:15,146 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-2.user_dao_jdbc.xml]
+2019-09-19 09:55:15,266 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:03:00,232 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:03:00 KST 2019]; root of context hierarchy
+2019-09-19 10:03:00,267 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 10:03:00,390 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:03:40,536 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:03:40 KST 2019]; root of context hierarchy
+2019-09-19 10:03:40,572 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 10:03:40,700 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:03:55,736 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:03:55 KST 2019]; root of context hierarchy
+2019-09-19 10:03:55,770 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 10:03:55,893 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:04:46,228 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:04:46 KST 2019]; root of context hierarchy
+2019-09-19 10:04:46,262 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 10:04:46,385 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:04:58,317 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:04:58 KST 2019]; root of context hierarchy
+2019-09-19 10:04:58,353 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 10:04:58,478 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:05:44,990 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:05:44 KST 2019]; root of context hierarchy
+2019-09-19 10:05:45,025 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 10:05:45,147 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:07:10,720 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:07:10 KST 2019]; root of context hierarchy
+2019-09-19 10:07:10,755 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 10:07:10,876 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:07:17,994 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:07:17 KST 2019]; root of context hierarchy
+2019-09-19 10:07:18,031 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 10:07:18,155 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:07:49,535 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:07:49 KST 2019]; root of context hierarchy
+2019-09-19 10:07:49,569 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 10:07:49,690 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:10:27,191 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:10:27 KST 2019]; root of context hierarchy
+2019-09-19 10:10:27,224 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user.xml]
+2019-09-19 10:10:27,346 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:14:39,049 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:14:39 KST 2019]; root of context hierarchy
+2019-09-19 10:14:39,080 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user_annotation.xml]
+2019-09-19 10:14:39,199 INFO  [main] support.DefaultListableBeanFactory (DefaultListableBeanFactory.java:829)     - Overriding bean definition for bean 'userDao': replacing [Generic bean: class [com.itwill.user.annotation.UserDaoImplAnnotation]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\java_bigdata\workspaceSpring\springMavenApp\target\classes\com\itwill\user\annotation\UserDaoImplAnnotation.class]] with [Generic bean: class [com.itwill.user.annotation.UserServiceImplAnnotation]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [com/itwill/user/99.user_annotation.xml]]
+2019-09-19 10:15:22,704 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:15:22 KST 2019]; root of context hierarchy
+2019-09-19 10:15:22,737 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user_annotation.xml]
+2019-09-19 10:15:22,851 INFO  [main] support.DefaultListableBeanFactory (DefaultListableBeanFactory.java:829)     - Overriding bean definition for bean 'userDao': replacing [Generic bean: class [com.itwill.user.annotation.UserDaoImplAnnotation]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\java_bigdata\workspaceSpring\springMavenApp\target\classes\com\itwill\user\annotation\UserDaoImplAnnotation.class]] with [Generic bean: class [com.itwill.user.annotation.UserServiceImplAnnotation]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [com/itwill/user/99.user_annotation.xml]]
+2019-09-19 10:47:51,504 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:47:51 KST 2019]; root of context hierarchy
+2019-09-19 10:47:51,538 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user_annotation.xml]
+2019-09-19 10:47:51,751 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:49:04,380 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:49:04 KST 2019]; root of context hierarchy
+2019-09-19 10:49:04,416 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user_annotation.xml]
+2019-09-19 10:49:04,606 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:49:20,546 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:49:20 KST 2019]; root of context hierarchy
+2019-09-19 10:49:20,582 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user_annotation.xml]
+2019-09-19 10:49:20,766 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:49:48,584 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:49:48 KST 2019]; root of context hierarchy
+2019-09-19 10:49:48,619 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user_annotation.xml]
+2019-09-19 10:49:48,807 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:50:29,704 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:50:29 KST 2019]; root of context hierarchy
+2019-09-19 10:50:29,738 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user_annotation.xml]
+2019-09-19 10:50:29,928 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 10:50:43,585 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58d25a40: startup date [Thu Sep 19 10:50:43 KST 2019]; root of context hierarchy
+2019-09-19 10:50:43,620 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill/user/99.user_annotation.xml]
+2019-09-19 10:50:43,812 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 11:44:50,949 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Sep 19 11:44:50 KST 2019]; root of context hierarchy
+2019-09-19 11:44:50,983 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-2.user_dao_jdbc.xml]
+2019-09-19 11:44:51,110 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 11:45:04,795 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Sep 19 11:45:04 KST 2019]; root of context hierarchy
+2019-09-19 11:45:04,827 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-3.user_dao_mybatis.xml]
+2019-09-19 11:45:05,184 WARN  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:487)     - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/itwill3/dao/3-3.user_dao_mybatis.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [com/itwill3/dao/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error registering typeAlias for 'Student'. Cause: java.lang.ClassNotFoundException: Cannot find class: com.mybatis3.domain.Student
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:743)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.itwill3.dao.UserDaoMybatisMain.main(UserDaoMybatisMain.java:13)
+Caused by: org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [com/itwill3/dao/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error registering typeAlias for 'Student'. Cause: java.lang.ClassNotFoundException: Cannot find class: com.mybatis3.domain.Student
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:500)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1627)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1564)
+	... 12 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error registering typeAlias for 'Student'. Cause: java.lang.ClassNotFoundException: Cannot find class: com.mybatis3.domain.Student
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:494)
+	... 15 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error registering typeAlias for 'Student'. Cause: java.lang.ClassNotFoundException: Cannot find class: com.mybatis3.domain.Student
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.typeAliasesElement(XMLConfigBuilder.java:171)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:109)
+	... 17 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.mybatis3.domain.Student
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.typeAliasesElement(XMLConfigBuilder.java:164)
+	... 18 more
+2019-09-19 11:45:59,704 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Sep 19 11:45:59 KST 2019]; root of context hierarchy
+2019-09-19 11:45:59,737 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-3.user_dao_mybatis.xml]
+2019-09-19 11:46:00,041 WARN  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:487)     - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/itwill3/dao/3-3.user_dao_mybatis.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [com/itwill3/dao/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error registering typeAlias for 'Student'. Cause: java.lang.ClassNotFoundException: Cannot find class: com.mybatis3.domain.Student
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:743)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.itwill3.dao.UserDaoMybatisMain.main(UserDaoMybatisMain.java:13)
+Caused by: org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [com/itwill3/dao/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error registering typeAlias for 'Student'. Cause: java.lang.ClassNotFoundException: Cannot find class: com.mybatis3.domain.Student
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:500)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1627)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1564)
+	... 12 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error registering typeAlias for 'Student'. Cause: java.lang.ClassNotFoundException: Cannot find class: com.mybatis3.domain.Student
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:494)
+	... 15 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error registering typeAlias for 'Student'. Cause: java.lang.ClassNotFoundException: Cannot find class: com.mybatis3.domain.Student
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.typeAliasesElement(XMLConfigBuilder.java:171)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:109)
+	... 17 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.mybatis3.domain.Student
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.typeAliasesElement(XMLConfigBuilder.java:164)
+	... 18 more
+2019-09-19 11:47:12,040 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Sep 19 11:47:12 KST 2019]; root of context hierarchy
+2019-09-19 11:47:12,073 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-3.user_dao_mybatis.xml]
+2019-09-19 11:47:12,200 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 11:47:12,405 WARN  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:487)     - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/itwill3/dao/3-3.user_dao_mybatis.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [com/itwill3/dao/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error registering typeAlias for 'Student'. Cause: java.lang.ClassNotFoundException: Cannot find class: com.mybatis3.domain.Student
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:743)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.itwill3.dao.UserDaoMybatisMain.main(UserDaoMybatisMain.java:13)
+Caused by: org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [com/itwill3/dao/mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error registering typeAlias for 'Student'. Cause: java.lang.ClassNotFoundException: Cannot find class: com.mybatis3.domain.Student
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:500)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1627)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1564)
+	... 12 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error registering typeAlias for 'Student'. Cause: java.lang.ClassNotFoundException: Cannot find class: com.mybatis3.domain.Student
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:494)
+	... 15 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error registering typeAlias for 'Student'. Cause: java.lang.ClassNotFoundException: Cannot find class: com.mybatis3.domain.Student
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.typeAliasesElement(XMLConfigBuilder.java:171)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:109)
+	... 17 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.mybatis3.domain.Student
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.typeAliasesElement(XMLConfigBuilder.java:164)
+	... 18 more
+2019-09-19 11:47:30,374 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Sep 19 11:47:30 KST 2019]; root of context hierarchy
+2019-09-19 11:47:30,407 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-3.user_dao_mybatis.xml]
+2019-09-19 11:47:30,530 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 11:57:54,989 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Sep 19 11:57:54 KST 2019]; root of context hierarchy
+2019-09-19 11:57:55,021 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-3.user_dao_mybatis.xml]
+2019-09-19 11:57:55,156 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 12:06:50,649 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Sep 19 12:06:50 KST 2019]; root of context hierarchy
+2019-09-19 12:06:50,680 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-3.user_dao_mybatis.xml]
+2019-09-19 12:06:50,806 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 12:12:46,472 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Sep 19 12:12:46 KST 2019]; root of context hierarchy
+2019-09-19 12:12:46,504 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-3.user_dao_mybatis.xml]
+2019-09-19 12:12:46,634 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 12:12:46,966 DEBUG [main] datasource.DataSourceUtils (DataSourceUtils.java:110)     - Fetching JDBC Connection from DataSource
+2019-09-19 12:12:47,470 DEBUG [main] datasource.DataSourceUtils (DataSourceUtils.java:327)     - Returning JDBC Connection to DataSource
+2019-09-19 12:14:09,205 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Sep 19 12:14:09 KST 2019]; root of context hierarchy
+2019-09-19 12:14:09,239 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-3.user_dao_mybatis.xml]
+2019-09-19 12:14:09,364 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 12:14:09,637 DEBUG [main] datasource.DataSourceUtils (DataSourceUtils.java:110)     - Fetching JDBC Connection from DataSource
+2019-09-19 12:14:10,152 DEBUG [main] datasource.DataSourceUtils (DataSourceUtils.java:327)     - Returning JDBC Connection to DataSource
+2019-09-19 12:14:10,153 DEBUG [main] datasource.DataSourceUtils (DataSourceUtils.java:110)     - Fetching JDBC Connection from DataSource
+2019-09-19 12:14:10,167 DEBUG [main] datasource.DataSourceUtils (DataSourceUtils.java:327)     - Returning JDBC Connection to DataSource
+2019-09-19 12:14:22,281 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Sep 19 12:14:22 KST 2019]; root of context hierarchy
+2019-09-19 12:14:22,314 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-3.user_dao_mybatis.xml]
+2019-09-19 12:14:22,445 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 12:14:22,718 DEBUG [main] datasource.DataSourceUtils (DataSourceUtils.java:110)     - Fetching JDBC Connection from DataSource
+2019-09-19 12:14:23,235 DEBUG [main] datasource.DataSourceUtils (DataSourceUtils.java:327)     - Returning JDBC Connection to DataSource
+2019-09-19 12:14:23,236 DEBUG [main] datasource.DataSourceUtils (DataSourceUtils.java:110)     - Fetching JDBC Connection from DataSource
+2019-09-19 12:14:23,251 DEBUG [main] datasource.DataSourceUtils (DataSourceUtils.java:327)     - Returning JDBC Connection to DataSource
+2019-09-19 12:14:41,056 INFO  [main] support.ClassPathXmlApplicationContext (AbstractApplicationContext.java:510)     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Sep 19 12:14:41 KST 2019]; root of context hierarchy
+2019-09-19 12:14:41,090 INFO  [main] xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from class path resource [com/itwill3/dao/3-3.user_dao_mybatis.xml]
+2019-09-19 12:14:41,242 INFO  [main] support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from class path resource [jdbc.properties]
+2019-09-19 12:14:41,552 DEBUG [main] datasource.DataSourceUtils (DataSourceUtils.java:110)     - Fetching JDBC Connection from DataSource
+2019-09-19 12:14:42,115 DEBUG [main] datasource.DataSourceUtils (DataSourceUtils.java:327)     - Returning JDBC Connection to DataSource
+2019-09-19 12:14:42,116 DEBUG [main] datasource.DataSourceUtils (DataSourceUtils.java:110)     - Fetching JDBC Connection from DataSource
+2019-09-19 12:14:42,124 DEBUG [main] datasource.DataSourceUtils (DataSourceUtils.java:327)     - Returning JDBC Connection to DataSource

@@ -1,0 +1,618 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko_KR">
+<head>
+<title>WELCOME TO AJAX</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="guest.css" type="text/css" media="screen"/>
+<style type="text/css">
+input.error, textarea.error {
+	border: 1px solid orange;
+}
+
+label.error {
+	margin-left: 10px;
+	color: orange;
+}
+</style>
+<script src="./js/httpRequest.js" type="text/javascript"></script>
+
+<!--
+        <script src="guest.js" type="text/javascript"></script>
+-->
+<script type="text/javascript">
+	/*%%%%%%%%%%%%%%%%%%%%%%%응답도착했을시실행되는콜백함수%%%%%%%%%%%%%%%%%%%%%%%*/
+
+	/****************guest_list[HTML]콜백함수******************/
+	function displayGuestListHTML() {
+		if (xhr.readyState == 4) {
+			if (xhr.status == 200) {
+				var htmlText = xhr.responseText;
+
+				document.getElementById('guest_list').innerHTML = htmlText;
+				/*
+				<div class="guest_item">
+					<h3 class="guest_title"  guest_no="226">
+						<a href=''>springTest11111[HTML]</a>
+					</h3>
+				</div>
+				 */
+				showLoadingDialog(false);
+			}
+		}
+	}
+	/****************guest_list[JSON]콜백함수******************/
+	function displayGuestListJSON() {
+		if (xhr.readyState == 4) {
+			if (xhr.status == 200) {
+				var jsonText = xhr.responseText;
+				var guestJSONArray = JSON.parse(jsonText);
+				var html = "";
+				for (var i = 0; i < guestJSONArray.length; i++) {
+					var guestJSONObject = guestJSONArray[i];
+					html += "<div class=\"guest_item\">";
+					html += "<h3 class=\"guest_title\"  guest_no=\""+guestJSONObject.guest_no+"\"><a href=''>"
+							+ guestJSONObject.guest_title + "</a>[JSON]</h3>";
+					html += "</div>";
+				}
+				/*
+				<div class="guest_item">
+					<h3 class="guest_title"  guest_no="226">
+						<a href=''>springTest11111[HTML]</a>
+					</h3>
+				</div>
+				 */
+				document.getElementById('guest_list').innerHTML = html;
+				showLoadingDialog(false);
+			}
+		}
+	}
+	/****************guest_list[XML]콜백함수******************/
+	function displayGuestListXML() {
+		if (xhr.readyState == 4) {
+			if (xhr.status == 200) {
+				var xmlDocument = xhr.responseXML;
+				var guestNodeList = xmlDocument.getElementsByTagName('guest');
+
+				/*
+				<div class="guest_item">
+					<h3 class="guest_title"  guest_no="226">
+						<a href=''>springTest11111[HTML]</a>
+					</h3>
+				</div>
+				 */
+				console.log(guestNodeList.length);
+				var html = "";
+				for (var i = 0; i < guestNodeList.length; i++) {
+					var guest_no = guestNodeList.item(i).getElementsByTagName(
+							'guest_no').item(0).firstChild.nodeValue;
+					var guest_title = guestNodeList.item(i)
+							.getElementsByTagName('guest_title').item(0).firstChild.nodeValue;
+					html += "<div class=\"guest_item\">";
+					html += "<h3 class=\"guest_title\"  guest_no=\""+guest_no+"\"><a href=''>"
+							+ guest_title + "</a>[XML]</h3>";
+					html += "</div>";
+
+				}
+				document.getElementById('guest_list').innerHTML = html;
+				showLoadingDialog(false);
+			}
+		}
+	}
+	/****************guest_insert_form[HTML]콜백함수******************/
+	function displayGuestInsertForm() {
+		if (xhr.readyState == 4) {
+			var formStr = xhr.responseText;
+			document.getElementById('guest_list').innerHTML = formStr;
+			showLoadingDialog(false);
+			/*******form이 DOM Tree에 추가된후 이벤트처리******
+				DOModeInserted event에서처리
+			 ***************************************************/
+
+		}
+	}
+	/****************guest_detail[JSON]콜백함수******************/
+	function displayGuestDetailJSON(element) {
+
+	}
+	/****************guest_detail[XML]콜백함수******************/
+	function displayGuestDetailXML(element) {
+
+	}
+	/****************guest_detail[HTML]콜백함수******************/
+	function displayGuestDetailHTML(element) {
+		/*
+		 element --> h3
+		 */
+		if (xhr.readyState == 4) {
+			var htmlData = xhr.responseText;
+			/*
+			<div class="guest_date">
+				날짜:2019-07-22 14:22:18
+			</div>
+			<div class="guest_name">
+				이름:김경호
+			</div>
+			<div class="guest_email">
+				이메일:guard@naver.com 
+			</div>
+			<div class="guest_homepage">
+				홈페이지:http://
+			</div>
+			<div class="guest_content">
+				내용:방명록처럼 사용avv
+			</div>
+			*/
+			var divE = document.createElement('div');
+			divE.setAttribute('class', 'guest_detail');
+			divE.style.display = 'block';
+
+			/*************삭제수정UI추가***********/
+			htmlData += "<div class='guest_delete' style='display: block;'>";
+			var guest_no = element.getAttribute('guest_no');
+			htmlData += "<input type='button' value='삭제' guest_no='"+guest_no+"'>";
+			htmlData += "<input type='button' value='수정' guest_no='"+guest_no+"'>";
+			htmlData += "</div>";
+			/***********************************/
+
+			divE.innerHTML = htmlData;
+			element.parentElement.appendChild(divE);
+			/*
+			<div class="guest_item">
+				<h3 class="guest_title"  guest_no="226"><a href=''>springTest11111[HTML]</a></h3>
+				<!--생성 -->
+				<div class="guest_detail">
+					/*****받은데이타 시작*******
+					<div class="guest_date">
+						날짜:2019-07-22 14:22:18
+					</div>
+					<div class="guest_name">
+						이름:김경호
+					</div>
+					<div class="guest_email">
+						이메일:guard@naver.com 
+					</div>
+					<div class="guest_homepage">
+						홈페이지:http://
+					</div>
+					<div class="guest_content">
+						내용:방명록처럼 사용avv
+					</div>
+					********받은데이타 끝******
+				</div>
+			</div>
+			 */
+		}
+	}
+
+	/****************guest_insert_action[text]콜백함수******************/
+	function displayGuestInertAction() {
+
+	}
+	function login_check(){
+		var jsonResult=null;
+		sendRequest('guest/guest_session_check.jsp', null, function() {
+			if(xhr.readyState==4){
+				jsonResult = JSON.parse(xhr.responseText);
+			}
+		}, 'POST', false);
+		
+		return jsonResult;
+	}
+	
+	/*%%%%%%%%%%%%%%%%%%%%%%%메뉴 UI이벤트처리%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+	window.onload = function() {
+		var loginResultJSON = login_check();
+		console.log(loginResultJSON);
+		if(loginResultJSON.status.trim()=='success'){
+			//logout form show
+			document.getElementById('guest_logout_form').style.display='block';	
+			document.getElementById('idSpan').innerHTML
+					=loginResultJSON.login_id;
+			//login form hide
+			document.getElementById('guest_login_form').style.display='none';		
+			
+		}else{
+			//logout form hide
+			document.getElementById('guest_logout_form').style.display='none';		
+			//login form show
+			document.getElementById('guest_login_form').style.display='block';		
+		}
+		/*
+		<div class="menu" id="menu-a">
+					<h3>
+						<a href="test.jsp">방명록 리스트[html]</a>
+					</h3>
+		</div>
+		 */
+		if(loginResultJSON.status.trim()=='success'){
+			/**************guest_list[HTML]이벤트*****************/
+			document.getElementById('menu-a').getElementsByTagName('a').item(0)
+					.addEventListener(
+							'click',
+							function(e) {
+								sendRequest('guest/guest_list_html.do', null,
+										displayGuestListHTML, 'GET');
+								showLoadingDialog(true);
+								e.preventDefault();
+							});
+	
+			/*******************guest_list[JSON]이벤트*********************/
+			document.getElementById('menu-b').getElementsByTagName('a').item(0)
+					.addEventListener(
+							'click',
+							function(e) {
+								sendRequest('guest/guest_list_json.jsp', null,
+										displayGuestListJSON, 'GET');
+								showLoadingDialog(true);
+								e.preventDefault();
+							});
+	
+			/*******************guest_list[XML]이벤트*********************/
+			document.getElementById('menu-c').getElementsByTagName('a').item(0)
+					.addEventListener(
+							'click',
+							function(e) {
+								sendRequest('guest/guest_list_xml.jsp', null,
+										displayGuestListXML, 'GET');
+								showLoadingDialog(true);
+								e.preventDefault();
+							});
+			/**************guest_logout 이벤트[a]*****************/	
+			document
+				.getElementById('guest_logout_a')
+				.addEventListener('click',function(e){
+					sendRequest(
+							'guest/guest_logout_action.jsp',
+							null,
+							function() {
+							if(xhr.readyState==4){
+								/*
+								//login form show
+								document.getElementById('guest_login_form').style.display='none';
+								document.getElementById('idSpan').innerHTML=guest_idStr;
+								//logout form hide
+								document.getElementById('guest_logout_form').style.display='block';
+								*/
+								location.href='guest.html';
+							}	
+					}, 'POST');
+					
+					e.preventDefault();
+				});
+			
+		}else{
+			document.getElementById('menu-a')
+				.getElementsByTagName('a')
+				.item(0)
+				.addEventListener('click',function(e){
+					alert('로그인하세요');
+					e.preventDefault();
+				});
+			document.getElementById('menu-b')
+				.getElementsByTagName('a')
+				.item(0)
+				.addEventListener('click',function(e){
+					alert('로그인하세요');
+					e.preventDefault();
+				});
+			document.getElementById('menu-c')
+				.getElementsByTagName('a')
+				.item(0)
+				.addEventListener('click',function(e){
+					alert('로그인하세요');
+					e.preventDefault();
+				});
+			
+			document.getElementById('guest_logout_a')
+				.addEventListener('click', function(e) {
+				alert('로그인하세요');
+				e.preventDefault();
+			})
+			
+		}
+		/*******************guest_insert_form[HTML]이벤트*********************/
+		document.getElementById('menu-d').getElementsByTagName('a').item(0)
+				.addEventListener(
+						'click',
+						function(e) {
+							sendRequest('guest_insert_form.html', null,
+									displayGuestInsertForm, 'GET');
+							showLoadingDialog(true);
+							e.preventDefault();
+						});
+		/**************guest_login_form이벤트[submit]*****************/	
+		
+		document
+			.getElementById('guest_login_form')
+			.addEventListener('submit',function(e){
+				
+				var guest_login_formE = e.target;
+				var guest_idStr = guest_login_formE.guest_id.value;
+				var guest_passStr = guest_login_formE.guest_pass.value;
+				if(guest_idStr==null || guest_idStr.trim()=='' 
+					||guest_passStr==null || guest_passStr.trim()==''){
+					guest_login_formE.guest_id.focus();
+					document.getElementById('msg').style.color='red';
+					document.getElementById('msg').innerHTML='아이디와패쓰워드를 입력하세요';
+					e.preventDefault();
+					return;
+				}
+				var params='guest_id='+guest_idStr.trim()+'&guest_pass='+guest_passStr.trim();
+				sendRequest('guest/guest_login_action.jsp',
+						params,
+						function() {
+							if(xhr.readyState==4){
+								var loginResultText = xhr.responseText;
+								if(loginResultText.trim()=='success'){
+									/*
+									//login form hide
+									document.getElementById('guest_login_form').style.display='none';
+									document.getElementById('idSpan').innerHTML=guest_idStr;
+									//logout form show
+									document.getElementById('guest_logout_form').style.display='block';
+									*/
+									//DOM tree loading
+									location.href='guest.html';
+								}else{
+									guest_login_formE.guest_id.select();
+									
+									document.getElementById('msg')
+										.style.color='red';
+									document.getElementById('msg')
+										.innerHTML='아이디와패쓰워드를 확인하세요';
+								}
+							}
+						}, 
+						'POST');
+				
+				//ajax요청
+				e.preventDefault();
+		});
+		
+		
+	};
+	/*%%%%%동적으로추가되는 Node 이벤트처리[DOMNodeInserted이벤트]%%%%%%*/
+	/*******************DOMNodeInserted이벤트********************/
+	document.addEventListener(
+					"DOMNodeInserted",
+					function(e) {
+						/******방명록쓰기폼 submit이벤트******/
+						if (e.target.id == 'guest_write_form') {
+
+							var guestWriteForm = document
+									.getElementById('guest_write_form');
+							guestWriteForm
+									.addEventListener(
+											'submit',
+											function(e1) {
+												var params = "guest_name="
+														+ guestWriteForm.guest_name.value
+														+ "&"
+														+ "guest_title="
+														+ guestWriteForm.guest_title.value
+														+ "&"
+														+ "guest_content="
+														+ guestWriteForm.guest_content.value
+														+ "&"
+														+ "guest_email="
+														+ guestWriteForm.guest_email.value
+														+ "&"
+														+ "guest_homepage="
+														+ guestWriteForm.guest_homepage.value;
+												var url = 'guest/guest_insert_action.jsp';
+												var method = 'POST';
+												sendRequest(
+														url,
+														params,
+														function() {
+															if (xhr.readyState == 4) {
+																var recvText = xhr.responseText;
+																if (recvText
+																		.trim() == 'true') {
+																	//리스트를보여줌
+																	sendRequest(
+																			'guest/guest_list_html.jsp',
+																			null,
+																			displayGuestListHTML,
+																			'GET');
+
+																} else {
+																	alert('쓰기실패');
+																}
+															}
+														}, method);
+												e1.preventDefault();
+											});
+						}
+						/******방명록상세보기이벤트*****/
+						/*
+							<div class="guest_item">
+								<h3 class="guest_title"  guest_no="226">
+									<a href=''>springTest11111[HTML]</a>
+								</h3>
+							</div>
+							<div class="guest_item">
+								<h3 class="guest_title"  guest_no="226">
+									<a href=''>springTest11111[HTML]</a>
+								</h3>
+							</div>
+						 */
+						if (e.target.tagName = 'DIV'
+								&& e.target.className == 'guest_item') {
+							//var divE = e.target;
+							e.target.getElementsByTagName('a')
+									.item(0)
+									.addEventListener(
+											'click',
+											function(e2) {
+
+												if (e2.target.parentElement.parentElement.childElementCount > 1) {
+													//ajax요청안함(show hide)
+													if (e2.target.parentElement.parentElement.lastElementChild.style.display == 'block') {
+														e2.target.parentElement.parentElement.lastElementChild.style.display = 'none';
+													} else {
+														e2.target.parentElement.parentElement.lastElementChild.style.display = 'block'
+													}
+												} else {
+													//ajax요청
+													var guest_no = e2.target.parentElement
+															.getAttribute('guest_no');
+
+													sendRequest(
+															'guest/guest_detail_html.do?guest_no='
+																	+ guest_no,
+															null,
+															function() {
+																displayGuestDetailHTML(e2.target.parentElement);
+															}, 'GET');
+													/*
+													sendRequest('guest/guest_detail_json.jsp?guest_no='+guest_no,
+															    null,
+															    function(){
+																	displayGuestDetailJSON(e2.target.parentElement);
+																},
+															    'GET');
+													sendRequest('guest/guest_detail_xml.jsp?guest_no='+guest_no,
+															    null,
+															    function(){
+																	displayGuestDetailXML(e2.target.parentElement);
+																},
+															    'GET');
+													 */
+												}
+
+												e2.preventDefault();
+											});
+						}
+
+					});
+
+	/*******************guest_detail[HTML]이벤트*********************/
+
+	/*******loading dialog************/
+	function showLoadingDialog(isVisible) {
+		if (isVisible) {
+			//show
+			var dialogDivE = document.createElement('div');
+			dialogDivE.setAttribute('id', 'loading');
+			dialogDivE.innerHTML = 'loading...';
+			dialogDivE.style.display = 'block';
+			var guestListDivE = document.getElementById('guest_list');
+			guestListDivE.parentElement.insertBefore(dialogDivE, guestListDivE);
+
+		} else {
+			//hide
+			var loadingDivE = document.getElementById('loading');
+			document.getElementById('guest_list').parentElement
+					.removeChild(loadingDivE);
+		}
+	}
+</script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<h1>WELCOME TO AJAX</h1>
+		</div>
+		<div id="sidebar">
+
+			<h2>회원관리메뉴</h2>
+			<div class="menus">
+				<div class="menu" id="menu-a">
+					<h3>
+						<a href="test.jsp">방명록 리스트[html]</a>
+					</h3>
+				</div>
+				<div class="menu" id="menu-b">
+					<h3>
+						<a href="#">방명록 리스트[json]</a>
+					</h3>
+				</div>
+				<div class="menu" id="menu-c">
+					<h3>
+						<a href="#">방명록 리스트[xml]</a>
+					</h3>
+				</div>
+				<div class="menu" id="menu-d">
+					<h3>
+						<a href="#">방명록 쓰기</a>
+					</h3>
+				</div>
+
+				<form id="guest_login_form" method="get" action="vfbfcv">
+					<fieldset>
+						<legend>로그인</legend>
+						<p>
+							<label for="guest_id">아이디:</label> <input type="text"
+								id="guest_id" name="guest_id" />
+						</p>
+						<p>
+							<label for="guest_pass">패쓰워드:</label> <input type="text"
+								name="guest_pass" id="guest_pass" />
+						</p>
+						<p>
+							<input type="submit" name="write" value="로그인" id="write" /> <input
+								type="reset" name="cancle" value="취소" id="cancle" />
+
+						</p>
+						<div id="msg"></div>
+					</fieldset>
+				</form>
+				<form id="guest_logout_form">
+					<div>
+						<span id="idSpan"></span>님 로그인<br /> <a id="guest_logout_a" href='#'>로그아웃</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="content">
+			<div id="guest_list">
+				<!-- 
+                <form id="guest_write_form" action="xzxz">
+					    <fieldset>
+					        <legend>
+					            방명록쓰기
+					        </legend>
+					        <p>
+					            <label for="guest_name">이름:</label>
+					            <input type="text"
+					            id="guest_name" name="guest_name"/>
+					        </p>
+					        <p>
+					            <label for="guest_title">제목:</label>
+					            <input type="text"
+					            id="guest_title" name="guest_title"/>
+					        </p>
+					        <p>
+					            <label for="guest_content">내용:</label>
+					            <input type="text"
+					            id="guest_content" name="guest_content" />
+					        </p>
+					        <p>
+					            <label for="guest_homepage">홈피:</label>
+					            <input type="text"
+					            name="guest_homepage" id="guest_homepage" />
+					        </p>
+					        <p>
+					            <label for="guest_email">이메일:</label>
+					            <input type="text"
+					            name="guest_email" id="guest_email" />
+					        </p>
+					        <p>
+					            <input type="submit" name="write" value="쓰기" id="write" />
+					        </p>
+					    </fieldset>
+				</form>
+                 -->
+			</div>
+		</div>
+		<div id="footer">
+			<p>This page was built for jquery demonstration purposes.</p>
+		</div>
+
+	</div>
+
+</body>
+</html>
